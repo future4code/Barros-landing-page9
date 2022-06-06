@@ -55,15 +55,66 @@ a:hover {
 
 /* MAIN */
 
-main > section {
-    margin: 3em 2em;
+.conteudo-principal {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 4em;
+    margin: 5em 4em;
 }
 
+.conteudo-principal-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 4em;
+}
 
+.conteudo-principal-subtitulo {
+    font-size: 2em;
+    color: rgb(255, 143, 78);
+    margin-bottom: 0.5em;
+}
 
+.conteudo-principal-paragrafo {
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+    text-indent: 1.8em;
+    text-align: justify;
+}
 
+.ultima-section {
+    background-image: url(img/partnership.png);
+    padding: 13em 0;
+    margin-bottom: 5em;
+}
 
+.ultima-section-subtitulo {
+    font-size: 1.7em;
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 0.6em 0;
+    box-shadow: 0.25em 0.25em 0.2em rgba(0, 0, 0, 0.479);
+}
 
+.ultima-section-botao {
+    font-size: 1.6em;
+    color:#F5F5F5;
+    padding: 0.6em 0.9em;
+    border-radius: 1em;
+    border: #F5F5F5;
+    background-color: rgb(255, 143, 78);
+    display: block;
+    margin: 2em auto 0 auto;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.438);
+    cursor: pointer;
+}
+
+.ultima-section-botao:hover {
+    -webkit-transform: scale(1.05);
+    scale: 1.05;
+}
 
 /* FOOTER */
 footer {
@@ -71,7 +122,7 @@ footer {
     flex-direction: row;
     background-color: rgb(158, 156, 156);
     gap: 20em;
-    padding: 1.5em;
+    padding: 2.5em 1.5em;
 }
 
 .footer-texto {
@@ -84,10 +135,16 @@ footer {
 .footer-redes-sociais {
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 0.8em;
     margin-left: 12em; 
+}
+
+.footer-redes-sociais > img:hover {
+    -webkit-transform: scale(1.08);
+    scale: 1.08;
 }
 
 footer > section > p {
     color: #F5F5F5;
+    margin-bottom: 0.5em;
 }
