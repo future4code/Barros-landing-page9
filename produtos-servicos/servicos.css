@@ -26,31 +26,36 @@ header {
     background-color: rgb(255, 143, 78);
     position: sticky;
     top: 0;
+    padding: 0em 2em;
 }
 
 .header-img {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-left: 1.6em;
 }
 
 .header-links {
+    font-size: 1em;
     display: flex;
     flex-direction: row;
-    gap: 2em;
-    padding-left: 12em;
+    padding-left: 6em;
     align-items: center;
+    
 }
 
-a {
+.header-links-item {
     text-decoration: none;
-    color: #F5F5F5;
+    text-align: center;
+    color: white;
+    padding: 1em 1.4em;
 }
 
-a:hover {
-    -webkit-transform: scale(1.07);
-    scale: 1.07;
+.header-links-item:hover {
+    background-color: #f5f5f53b;
+    margin: 0 0.4em;
+    padding: 0.8em 1em;
+    border-radius: 1.5em;
 }
 
 /* MAIN */
@@ -95,7 +100,7 @@ a:hover {
 
 .ultima-section {
     background-image: url(img/partnership.png);
-    padding: 13em 0;
+    padding: 11em 0;
     margin-bottom: 5em;
 }
 
@@ -108,11 +113,9 @@ a:hover {
 }
 
 .ultima-section-botao {
-    font-size: 1.6em;
-    color:#F5F5F5;
-    padding: 0.6em 0.9em;
-    border-radius: 1.3em;
-    border: #F5F5F5;
+    padding: 0.9em 1.6em;
+    border: rgb(255, 143, 78);
+    border-radius: 2em;
     background-color: rgb(255, 143, 78);
     display: block;
     margin: 2em auto 0 auto;
@@ -121,8 +124,13 @@ a:hover {
 }
 
 .ultima-section-botao:hover {
-    -webkit-transform: scale(1.05);
-    scale: 1.05;
+    background-color:  rgba(255, 143, 78, 0.856);
+}
+
+.ultima-section-botao-item {
+    text-decoration: none;
+    font-size: 2.2em;
+    color: white;
 }
 
 /* FOOTER */
@@ -142,16 +150,49 @@ footer {
 }
 
 .footer-redes-sociais {
-    display: flex;
-    flex-direction: row;
-    gap: 0.8em;
-    margin-left: 12em;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 0.6em;
     cursor: pointer;
+    align-items: center;
+    margin-left: 11em;
 }
 
-.footer-redes-sociais > img:hover {
-    -webkit-transform: scale(1.08);
-    scale: 1.08;
+.footer-redes-sociais > a {
+    height: 3.4em;
+    width: 3.4em;
+}
+
+.icone-instagram {
+    background-image: url(img/instagram.png);
+}
+
+.icone-instagram:hover {
+    background-image: url(img/instagram-hover.png);
+}
+
+.icone-facebook {
+    background-image: url(img/facebook.png);
+}
+
+.icone-facebook:hover {
+    background-image: url(img/facebook-hover.png);
+}
+
+.icone-twitter {
+    background-image: url(img/twitter.png);
+}
+
+.icone-twitter:hover {
+    background-image: url(img/twitter-hover.png);
+}
+
+.icone-linkedin {
+    background-image: url(img/linkedin.png);
+}
+
+.icone-linkedin:hover {
+    background-image: url(img/linkedin-hover.png);
 }
 
 footer > section > p {
