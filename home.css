@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --gray: #999999;
+    --orange: #FF914D;
+    --yellow: #FFBD59;
+    --red: red;
+    --light-blue: #0061ff;
+    --dark-blue: #08189e;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: var(--orange);
+    overflow-x: hidden;
+}
+
+
+
+/* NAV */
+
+.bank-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+}
+
+#f4bank {
+    width: 100px;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    background: var(--orange);
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav ul {
+    display: flex;
+    /* margin-right: 30px; */
+
+}
+
+.nav li {
+    list-style: none;
+    padding: 5px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+
+}
+
+.nav a:hover,
+li:hover {
+    background-color: #FCA97F;
+    transition: .2s;
+}
+
+/* INFO */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    color: var(--white);
+    font-weight: 900;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.info p {
+    text-align: center;
+    padding-bottom: 50px;
+    max-width: 60%;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.info>a {
+    padding: 15px 40px 15px 40px;
+    border-radius: 15px;
+    background-color: #FCA97F;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.info a:hover {
+    background: #FCA97F;
+}
+
+/* CARTÃO */
+
+.flex {
+    display: flex
+}
+
+.absolute {
+    position: absolute
+}
+
+.info-cartao {
+    width: 50%;
+
+}
+
+
+
+.info-cartao h1 {
+    margin-top: 200px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 900;
+}
+
+.info-cartao p {
+    font-size: 1.5rem;
+    color: var(--grey);
+    font-weight: 600;
+}
+
+.credit-card {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg);
+    margin-top: 100px;
+    padding-bottom: 200px;
+}
+
+
+
+.credit-card::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 400px;
+}
+
+.card {
+    margin-top: 150px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    transform-style: preserve-3d;
+    /* perspective: 800px; */
+}
+
+
+.card .face {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(255 255 255 / 20%);
+    border-radius: 10px;
+    background: linear-gradient(120deg, #fda085 0%, #f6d365 100%) transparent 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 0px 0px rgb(255 255 255 / 20%);
+    transform-style: preserve-3d;
+    transition: 0.75s ease-in-out;
+    backface-visibility: hidden;
+    transform: rotateY(0);
+}
+
+#chip {
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 50px;
+}
+
+#signal {
+    width: 25px;
+    height: 25px;
+    top: 115px;
+    left: 115px;
+    transform: rotate(90deg);
+}
+
+#logo {
+    width: 85px;
+    height: 85px;
+    bottom: 30px;
+    left: 40px;
+}
+
+#owner {
+    bottom: 55px;
+    left: 140px;
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.card .face.back {
+    transform: rotateY(180deg);
+}
+
+#greybar {
+    width: 100%;
+    height: 50px;
+    top: 15px;
+    background: var(--gray);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#card-info {
+    width: 100%;
+    bottom: 15px;
+    padding: 0 20px;
+    color: var(--white);
+}
+
+#card-number {
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+#card-info .information:not(:first-child) {
+    margin-left: 10px;
+}
+
+#card-info .flex .information {
+    align-items: center;
+}
+
+#card-info .flex .information .label {
+    display: block;
+    font-size: 0.4rem;
+    margin-right: 4px;
+    width: 30px;
+}
+
+.card .face.front::before,
+.card .face.front::after,
+.card .face.back::before,
+.card .face.back::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+
+.card .face.front::before,
+.card .face.front::after {
+    top: 10px;
+    mix-blend-mode: overlay;
+}
+
+
+.card .face.back::before,
+.card .face.back::after {
+    bottom: 30px;
+    mix-blend-mode: hue;
+}
+
+.card .face.front::before {
+    right: 20px;
+}
+
+.card .face.back::before {
+    right: 20px;
+}
+
+.card .face.front::after {
+    right: 45px;
+}
+
+.card .face.back::after {
+    right: 45px;
+}
+
+.card .face.front::before {
+    background: yellow;
+}
+
+.card .face.back::before {
+    background: var(--light-blue);
+}
+
+.card .face.front::after {
+    background-color: red;
+}
+
+.card .face.back::after {
+    background-color: var(--dark-blue);
+}
+
+.card:hover .face.front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .face.back {
+    transform: rotateY(360deg);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .credit-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .info-cartao {
+        text-align: center;
+    }
+
+    .info-card h1 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .credit-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .info {
+        justify-content: center;
+    }
+
+    .info h1 {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+
+    .nav {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        font-size: 15px;
+    }
+
+
+    #f4bank {
+        display: none;
+    }
+
+    .credit-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-cartao {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .info h1 {
+        padding-bottom: 15px;
+        font-size: 1.3rem;
+    }
+
+
+    .nav a {
+        padding: 0;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+
+    .info-cartao h1 {
+        font-size: 2rem;
+
+    }
+
+    .info-cartao p {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        margin-top: 100px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .nav a {
+        font-size: 10px;
+    }
+
+    .info h1 {
+        font-size: 1rem;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 350px;
+    }
+}
