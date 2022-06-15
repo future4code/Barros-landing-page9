@@ -1,0 +1,620 @@
+@charset "UTF-8";
+
+/* ------------------------------ SESSÃO FRANCINE (PRODUTOS/SERVIÇOS) -------------------------------- */
+
+/* STYLE DA SESSÃO DE PRODUTOS E SERVIÇOS PARA TELAS DE NO MÍNIMO 1201PX */
+@media screen and (min-device-width: 1201px) {
+    /* Margem superior da seção inteira */
+    #produtos-servicos {
+        margin-top: 80px;
+    }
+    
+    /* Colocando duas colunas no conteúdo principal */
+    .conteudo-principal {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        column-gap: 90px;
+        margin: 135px 75px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .conteudo-principal-img {
+        width: 100%;
+    }
+
+    /* Configurando os subtítulos */
+    .conteudo-principal-subtitulo {
+        font-size: 32px;
+        color: rgb(255, 143, 78);
+        margin-bottom: 12px;
+    }
+
+    /* Configurando os parágrafos */
+    .conteudo-principal-paragrafo {
+        font-size: 18px;
+        line-height: 36px;
+        margin-bottom: 8px;
+        text-indent: 48px;
+        text-align: justify;
+    }
+
+    /* Configuração geral da tabela */
+    .section-tabela-geral {
+        background-image: linear-gradient(to right, rgb(255, 143, 78), rgb(255, 143, 78), rgb(247, 206, 72));
+    }
+
+    .conteudo-principal-tabela {
+        font-size: 18px;
+        color: white;
+        padding: 40px 0px;
+        line-height: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Configuração da header da tabela */
+    th {
+        font-weight: bold;
+        font-size: 18px;
+        border-bottom: 1px solid #F5F5F5;
+        padding: 0 15px;
+    }
+
+    /* Configuração das colunas da tabela */
+    td {
+        padding: 0 100px;
+        border-bottom: 1px solid #F5F5F5;
+    }
+
+    /* Coluna da tabela da F4Bank */
+    .conteudo-tabela-f4bank {
+        background-color: #f5f5f525;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.082);
+    }
+
+    /* Configuração da section sobre antecipação de parcelas */
+    .conteudo-principal-antecipacao-parcelas {
+        background-image: linear-gradient(to right, rgb(255, 143, 78), rgb(255, 143, 78), rgb(247, 206, 72));
+        display: grid;
+        grid-template-columns: 35% 65%;
+        padding: 15px 75px 0 75px;
+    }
+
+    /* Configuração da section picture sobre antecipação de parcelas */
+    .img-antecipacao-parcelas {
+        display: flex;
+    }
+
+    /* Configuração da section de texto sobre antecipação de parcelas */
+    .texto-antecipacao-parcelas {
+        display: block;
+        margin: auto 0;
+        padding-left: 50px;
+    }
+
+    /* Subtítulo da seção sobre antecipação de prcelas */
+    .subtitulo-antecipacao-parcelas {
+        font-size: 34px;
+        color: white;
+        margin-bottom: 18px;
+    }
+
+    /* Parágrafo da seção sobre antecipação de prcelas */
+    .paragrafo-antecipacao-parcelas {
+        color: white;
+        font-size: 18px;
+        line-height: 35px;
+        margin-right: 18px;
+        margin-bottom: 8px;
+        text-align: justify;
+    }
+
+    /* Última imagem da tag main */
+    .ultima-section {
+        background-image: url(img/criar-conta.png);
+        background-repeat: no-repeat;
+        padding: 160px 0;
+        margin-bottom: 80px;
+    }
+
+    /* Subtítulo que fica em cima da última imagem */
+    .ultima-section-subtitulo {
+        display: block;
+        font-size: 28px;
+        line-height: 40px;
+        margin: -15px 75px 15px 660px;
+    }
+
+    /* Configuração do botão que fica em cima da última imagem */
+    .ultima-section-botao {
+        padding: 14px 26px;
+        border: rgb(255, 143, 78);
+        border-radius: 45px;
+        background-color: rgb(255, 143, 78);
+        display: block;
+        margin-top: 25px;
+        margin-left: 810px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+        cursor: pointer;
+    }
+
+    .ultima-section-botao:hover {
+        background-color:  rgba(255, 143, 78, 0.733);
+    }
+
+    .ultima-section-botao-item {
+        text-decoration: none;
+        font-size: 22px;
+        color: white;
+    }
+}
+
+
+
+/* -------------STYLE DA SESSÃO DE PRODUTOS E SERVIÇOS PARA TELAS ENTRE 801PX E 1200PX------------- */
+@media screen and (min-device-width: 801px) and (max-device-width: 1200px) {
+    /* Margem superior da seção inteira */
+    #produtos-servicos {
+        margin-top: 60px;
+    }
+    
+    /* Colocando duas colunas no conteúdo principal */
+    .conteudo-principal {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        column-gap: 40px;
+        margin: 95px 40px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .conteudo-principal-img {
+        width: 100%;
+    }
+
+    /* Configurando os subtítulos */
+    .conteudo-principal-subtitulo {
+        font-size: 28px;
+        color: rgb(255, 143, 78);
+        margin-bottom: 12px;
+    }
+
+    /* Configurando os parágrafos */
+    .conteudo-principal-paragrafo {
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 8px;
+        text-indent: 40px;
+        text-align: justify;
+    }
+
+    /* Configuração geral da tabela */
+    .section-tabela-geral {
+        background-image: linear-gradient(to right, rgb(255, 143, 78), rgb(255, 143, 78), rgb(247, 206, 72));
+    }
+
+    .conteudo-principal-tabela {
+        font-size: 18px;
+        color: white;
+        padding: 40px 0px;
+        line-height: 45px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Configuração da header da tabela */
+    th {
+        font-weight: bold;
+        font-size: 17px;
+        border-bottom: 1px solid #F5F5F5;
+        padding: 0 15px;
+    }
+
+    /* Configuração das colunas da tabela */
+    td {
+        padding: 0 25px;
+        border-bottom: 1px solid #F5F5F5;
+    }
+
+    /* Coluna da tabela da F4Bank */
+    .conteudo-tabela-f4bank {
+        background-color: #f5f5f525;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.082);
+    }
+
+    /* Configuração da section sobre antecipação de parcelas */
+    .conteudo-principal-antecipacao-parcelas {
+        background-image: linear-gradient(to right, rgb(255, 143, 78), rgb(255, 143, 78), rgb(247, 206, 72));
+        display: grid;
+        grid-template-columns: 35% 65%;
+        padding: 15px 40px 0 40px;
+    }
+
+    /* Configuração da section picture sobre antecipação de parcelas */
+    .img-antecipacao-parcelas {
+        display: flex;
+    }
+
+    /* Configuração da section de texto sobre antecipação de parcelas */
+    .texto-antecipacao-parcelas {
+        display: block;
+        margin: auto 0;
+        padding-left: 50px;
+    }
+
+    /* Subtítulo da seção sobre antecipação de prcelas */
+    .subtitulo-antecipacao-parcelas {
+        font-size: 26px;
+        color: white;
+        margin-bottom: 18px;
+    }
+
+    /* Parágrafo da seção sobre antecipação de parcelas */
+    .paragrafo-antecipacao-parcelas {
+        color: white;
+        font-size: 17px;
+        line-height: 33px;
+        margin-bottom: 8px;
+        text-align: justify;
+    }
+
+    /* Última imagem da tag main */
+    .ultima-section {
+        background-image: url(img/criar-conta.png);
+        background-repeat: no-repeat;
+        padding: 90px 0;
+        margin-bottom: 80px;
+    }
+
+    /* Subtítulo que fica em cima da última imagem */
+    .ultima-section-subtitulo {
+        background-color: rgba(212, 211, 211, 0.89);
+        display: block;
+        font-size: 24px;
+        line-height: 35px;
+        margin: 10vh 8vw 3vw 35vw;
+        text-align: center;
+    }
+
+    /* Configuração do botão que fica em cima da última imagem */
+    .ultima-section-botao {
+        padding: 12px 24px;
+        border: rgb(255, 143, 78);
+        border-radius: 45px;
+        background-color: rgb(255, 143, 78);
+        display: block;
+        margin: 4vw 0 8vw 50vw;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+        cursor: pointer;
+    }
+
+    .ultima-section-botao:hover {
+        background-color:  rgba(255, 143, 78, 0.733);
+    }
+
+    .ultima-section-botao-item {
+        text-decoration: none;
+        font-size: 22px;
+        color: white;
+    }
+}
+
+
+
+/* STYLE DA SESSÃO DE PRODUTOS E SERVIÇOS PARA TELAS ENTRE 481PX E 800PX */
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+    /* Margem superior da seção inteira */
+    #produtos-servicos {
+        margin-top: 40px;
+    }
+    
+    /* Colocando margem conteúdo principal */
+    .conteudo-principal {
+        margin: 50px 40px;
+    }
+
+    /* Configurando a largura das imagens */
+    .conteudo-principal-img {
+        width: 100%;
+    }
+
+    /* Colocar margem inferior ou superior em imagem ou texto no mobile */
+    .img-margem-inferior {
+        margin-bottom: 40px;
+    }
+
+    .margem-superior {
+        margin-top: 40px;
+    }
+
+    /* Configurando os subtítulos */
+    .conteudo-principal-subtitulo {
+        font-size: 22px;
+        color: rgb(255, 143, 78);
+        margin-bottom: 10px;
+    }
+
+    /* Configurando os parágrafos */
+    .conteudo-principal-paragrafo {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 8px;
+        text-indent: 38px;
+        text-align: justify;
+    }
+
+    .imagens-excluidas-mobile {
+        display: none;
+    }
+
+    /* Configuração geral da tabela */
+    .section-tabela-geral {
+        background-image: linear-gradient(to right, rgb(255, 143, 78), rgb(255, 143, 78), rgb(247, 206, 72));
+        padding: 3px 5px;
+    }
+
+    .conteudo-principal-tabela {
+        font-size: 15px;
+        color: white;
+        line-height: 35px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    /* Configuração da header da tabela */
+    th {
+        font-weight: bold;
+        font-size: 15px;
+        border-bottom: 1px solid #F5F5F5;
+        padding: 0 15px;
+    }
+
+    /* Configuração das colunas da tabela */
+    td {
+        border-bottom: 1px solid #F5F5F5;
+    }
+
+    /* Coluna da tabela da F4Bank */
+    .conteudo-tabela-f4bank {
+        background-color: #f5f5f525;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.082);
+    }
+
+    /* Configuração da section sobre antecipação de parcelas */
+    .conteudo-principal-antecipacao-parcelas {
+        background-image: linear-gradient(to right, rgb(255, 143, 78), rgb(255, 143, 78), rgb(247, 206, 72));
+        display: grid;
+        grid-template-columns: 35% 65%;
+        padding: 20px 40px 0 40px;
+    }
+
+    /* Configuração da section picture sobre antecipação de parcelas */
+    .img-antecipacao-parcelas {
+        display: flex;
+    }
+
+    /* Configuração da section de texto sobre antecipação de parcelas */
+    .texto-antecipacao-parcelas {
+        display: block;
+        margin: auto 0;
+        padding-left: 25px;
+    }
+
+    /* Subtítulo da seção sobre antecipação de prcelas */
+    .subtitulo-antecipacao-parcelas {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    /* Parágrafo da seção sobre antecipação de prcelas */
+    .paragrafo-antecipacao-parcelas {
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    /* Última imagem da tag main */
+    .ultima-section {
+        background-image: url(img/criar-conta.png);
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+        padding: 65px;
+    }
+
+    /* Subtítulo que fica em cima da última imagem */
+    .ultima-section-subtitulo {
+        background-color: rgba(212, 211, 211, 0.89);
+        display: block;
+        font-size: 19px;
+        line-height: 34px;
+        margin: 10vw 6vw 3vw 22vw;
+        text-align: center;
+    }
+
+    /* Configuração do botão que fica em cima da última imagem */
+    .ultima-section-botao {
+        padding: 12px 22px;
+        border: rgb(255, 143, 78);
+        border-radius: 45px;
+        background-color: rgb(255, 143, 78);
+        display: block;
+        margin: 0 15vw 14vw 36vw;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+        cursor: pointer;
+    }
+
+    .ultima-section-botao:hover {
+        background-color:  rgba(255, 143, 78, 0.733);
+    }
+
+    .ultima-section-botao-item {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+    }
+}
+
+
+
+
+/* STYLE DA SESSÃO DE PRODUTOS E SERVIÇOS PARA TELAS ENTRE 320PX E 480PX */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Margem superior da seção inteira */
+    #produtos-servicos {
+        margin-top: 40px;
+    }
+    
+    /* Colocando margem conteúdo principal */
+    .conteudo-principal {
+        margin: 40px 25px;
+    }
+
+    /* Configurando a largura das imagens */
+    .conteudo-principal-img {
+        width: 100%;
+    }
+
+    /* Colocar margem inferior ou superior em imagem ou texto no mobile */
+    .img-margem-inferior {
+        margin-bottom: 40px;
+    }
+
+    .margem-superior {
+        margin-top: 40px;
+    }
+
+    /* Configurando os subtítulos */
+    .conteudo-principal-subtitulo {
+        font-size: 22px;
+        color: rgb(255, 143, 78);
+        margin-bottom: 10px;
+    }
+
+    /* Configurando os parágrafos */
+    .conteudo-principal-paragrafo {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+        text-indent: 38px;
+        text-align: justify;
+    }
+
+    .imagens-excluidas-mobile {
+        display: none;
+    }
+
+    /* Configuração geral da tabela */
+    .section-tabela-geral {
+        background-image: linear-gradient(to right, rgb(255, 143, 78), rgb(255, 143, 78), rgb(247, 206, 72));
+        padding: 3px 5px;
+    }
+
+    .conteudo-principal-tabela {
+        font-size: 14px;
+        color: white;
+        line-height: 27px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    /* Configuração da header da tabela */
+    th {
+        font-weight: bold;
+        font-size: 14px;
+        border-bottom: 1px solid #F5F5F5;
+        padding: 0px 2px;
+    }
+
+    /* Configuração das colunas da tabela */
+    td {
+        border-bottom: 1px solid #F5F5F5;
+    }
+
+    /* Coluna da tabela da F4Bank */
+    .conteudo-tabela-f4bank {
+        background-color: #f5f5f525;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.082);
+    }
+
+    /* Configuração da section sobre antecipação de parcelas */
+    .conteudo-principal-antecipacao-parcelas {
+        background-image: linear-gradient(to right, rgb(255, 143, 78), rgb(255, 143, 78), rgb(255, 143, 78), rgb(255, 143, 78), rgb(247, 206, 72));
+        display: flex;
+        flex-direction: column;
+        padding: 20px 30px 0 30px;
+    }
+
+    /* Configuração da section picture sobre antecipação de parcelas */
+    .img-antecipacao-parcelas {
+        padding: 0 70px;
+        margin: 0 auto;    
+    }
+
+    /* Configuração da section de texto sobre antecipação de parcelas */
+    .texto-antecipacao-parcelas {
+        margin: 20px 10px 0 10px;
+    }
+
+    /* Subtítulo da seção sobre antecipação de prcelas */
+    .subtitulo-antecipacao-parcelas {
+        font-size: 18px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    /* Parágrafo da seção sobre antecipação de prcelas */
+    .paragrafo-antecipacao-parcelas {
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    /* Última imagem da tag main */
+    .ultima-section {
+        background-image: url(img/criar-conta.png);
+        background-repeat: no-repeat;
+        padding: 60px;
+        margin-bottom: 20px;
+    }
+
+    /* Subtítulo que fica em cima da última imagem */
+    .ultima-section-subtitulo {
+        display: block;
+        font-size: 19px;
+        line-height: 35px;
+        background-color: #cececed5;
+        text-align: center;
+        margin: 20vw auto 4vw auto;
+        padding: 10px 0;
+    }
+
+    /* Configuração do botão que fica em cima da última imagem */
+    .ultima-section-botao {
+        padding: 12px 24px;
+        border: rgb(255, 143, 78);
+        border-radius: 45px;
+        background-color: rgb(255, 143, 78);
+        display: block;
+        margin: 3vw auto 20vw auto;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+        cursor: pointer;
+    }
+
+    .ultima-section-botao:hover {
+        background-color:  rgba(255, 143, 78, 0.733);
+    }
+
+    .ultima-section-botao-item {
+        text-decoration: none;
+        font-size: 17px;
+        color: white;
+    }
+}
