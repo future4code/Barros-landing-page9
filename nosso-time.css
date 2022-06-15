@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* ---------------------- FRANCINE - SESSÃO NOSSO TIME ----------------------- */
+
+/* --------------- STYLE PARA TELAS DE NO MÍNIMO 1201PX --------------- */
+@media screen and (min-device-width: 1201px) {
+    #nosso-time {
+        margin: 70px 75px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+    }
+    
+    .conteudo-nosso-time {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.226);
+        padding: 20px;
+    }
+    
+    .conteudo-nosso-time-img {
+        width: 100%;
+    }
+    
+    .conteudo-nosso-time-subtitulo {
+        font-size: 25px;
+        margin: 18px 0;
+        color: rgb(255, 143, 78);
+    }
+    
+    .conteudo-nosso-time-paragrafo {
+        font-size: 18px;
+        line-height: 33px;
+        text-align: justify;
+        text-indent: 40px;
+        margin-bottom: 8px;
+    }
+}
+
+
+
+
+/* --------------- STYLE PARA TELAS ENTRE 801PX E 1200PX --------------- */
+@media screen and (min-device-width: 801px) and (max-device-width: 1200px) {
+    #nosso-time {
+        margin: 60px 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+    
+    .conteudo-nosso-time {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.226);
+        padding: 20px;
+    }
+    
+    .conteudo-nosso-time-img {
+        width: 100%;
+    }
+    
+    .conteudo-nosso-time-subtitulo {
+        font-size: 25px;
+        margin: 18px 0;
+        color: rgb(255, 143, 78);
+    }
+    
+    .conteudo-nosso-time-paragrafo {
+        font-size: 18px;
+        line-height: 33px;
+        text-align: justify;
+        text-indent: 40px;
+        margin-bottom: 8px;
+    }
+}
+
+
+
+
+/* --------------- STYLE PARA TELAS ENTRE 481PX E 800PX --------------- */
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+    #nosso-time {
+        margin: 60px 90px;
+    }
+    
+    .conteudo-nosso-time {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.226);
+        padding: 40px;
+        margin-bottom: 60px;
+    }
+    
+    .conteudo-nosso-time-img {
+        width: 100%;
+    }
+    
+    .conteudo-nosso-time-subtitulo {
+        font-size: 23px;
+        margin: 18px 0;
+        color: rgb(255, 143, 78);
+    }
+    
+    .conteudo-nosso-time-paragrafo {
+        font-size: 17px;
+        line-height: 31px;
+        text-align: justify;
+        text-indent: 36px;
+        margin-bottom: 7px;
+    }
+}
+
+
+
+
+
+/* --------------- STYLE PARA TELAS ENTRE 320PX E 480PX --------------- */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #nosso-time {
+        margin: 60px 40px;
+    }
+    
+    .conteudo-nosso-time {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.226);
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+    
+    .conteudo-nosso-time-img {
+        width: 100%;
+    }
+    
+    .conteudo-nosso-time-subtitulo {
+        font-size: 23px;
+        margin: 18px 0;
+        color: rgb(255, 143, 78);
+    }
+    
+    .conteudo-nosso-time-paragrafo {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: justify;
+        text-indent: 33px;
+        margin-bottom: 6px;
+    }
+}
