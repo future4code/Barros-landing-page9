@@ -1,0 +1,310 @@
+
+.container {
+    position: relative;
+    }
+
+.container__abertura {
+    
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    }
+
+.container__video {
+    object-fit: cover;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    }
+
+.container__conteudo {
+   
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+
+
+.container3 {
+    align-items: start;
+    display: flex ;
+    height: 350px;
+    font: 400px;
+    font-size: xx-large;
+    font-style: oblique;
+    font-weight: lighter;
+    padding: 40px;
+    }
+
+.container__media {
+    margin-right: 16px;
+    width: 200px;
+    height: 200px
+    }
+
+
+.container__conteudo_atendimento {
+  
+    margin: 10px;
+    margin-left: 25%;
+    padding: 30px;
+    text-align: center;
+    }
+
+/* ANCHOR Cartões de atendimento por categoria*/
+
+.container2 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: bisque;
+    padding: 50px;
+    }
+
+
+.cartao {
+    
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    background-color: whitesmoke;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow:   0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 10px;
+    margin: 0px 8px 0px 60px; 
+    }
+
+.cartao__imagem {
+
+    height: 150px;
+    width: 100%;
+    flex-basis: 25%;
+    padding-left: 0px;
+    padding-right: 0px;                   
+    border-radius: 10px;                                   
+    }
+
+
+.titulo_cartao {
+
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 8px;
+    color: white;
+    margin-top: 50px;                   
+    }
+
+.background_cartao {
+  background-image: url(/entrepreneur-startup-start-up-man-39866.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  clip-path: circle();
+  }
+
+.conteudo_cartao {
+  color:dimgray;
+  text-align: left;
+  font-size: larger;
+  line-height: 2;
+  margin-top: 50px;
+}
+
+/* ANCHOR Animação dos cards*/
+
+.cartao:hover {
+    background: white;
+    box-shadow: none ;
+    }
+
+.cartao:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid hwb(16 11% 0%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+
+/*ANCHOR --- Formulário de contato --- */
+
+  #contato {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.985);
+    }
+  
+  .seçao-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'roboto', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    }
+  
+  .contato-abertura {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px ;
+    padding: 20px;
+    position: relative;
+    }
+  
+
+  .formulario-horizontal {
+    max-width: 300px;
+    font-family: 'roboto';
+    font-weight: 400;
+    }
+  
+  .campos-formulario, 
+    textarea {
+    width: 400px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    }
+  
+  .botao-envio {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    margin-left: 50px;
+    }
+  
+  .botao-de-enviar {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+    }
+  
+  .enviar-texto {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'roboto', sans-serif;
+    letter-spacing: 2px;
+    }
+  
+  .botao-de-enviar:hover {
+    transform: translate3d(0px, -29px, 0px);
+    }
+  
+  .lista-de-contato {
+    list-style-type: none;
+    margin-left: -20px;
+    padding-right: 20px;  
+    }
+  
+  .lista-itens {
+    line-height: 4;
+    color: #aaa; 
+    }
+  
+  .texto-para-contato {
+    font: 300 18px 'roboto', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+    }
+  
+  .lugar {
+    margin-left: -250px; 
+    }
+  
+  .telefone {
+    margin-left: -250px;
+    }
+  
+  .gmail {
+    margin-left: -250px;
+    }
+  
+
+  .texto-para-contato a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    }
+  
+
+  .texto-para-contato a:hover {
+    color: #fff;
+    text-decoration: none;
+    }
+   
+ 
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+  
+
+  @media screen and (max-width: px) {
+    .formulario-abertura {
+      float: none;
+      margin: 0; 
+      }  
+
+
+    .campos-formulario, textarea {
+      margin: 0;
+      }
+   
+    
+    .nome, .email, textarea {
+      width: 280px;
+      } 
+    
+    .container-caixa-contato {
+      margin-top: 60px;
+      max-width: px;
+      }  
+    
+    } 
+
+
+/* ANCHOR ----Google Maps----*/
+
+  .google-maps {
+    font-family: 'roboto';
+    font-weight: 400;
+    margin-right: 20px;
+    margin-top: -55%;
+    }
+
+   
+  .google-maps iframe {
+    left:0;
+    top:0;
+    padding-left:50px;
+    height:100%;
+    width:80%;   
+    }
+
+
+
+
+  
+
+  
+  

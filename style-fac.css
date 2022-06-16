@@ -1,0 +1,172 @@
+/*ANCHOR FAQ - Início do CSS do FAQ*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  }
+
+
+body {
+  font-family: ROBOTO; /*REVIEW FONT ROBOTO*/
+  }
+
+.h1-faq {
+  font-family:roboto;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:100px;
+  padding: 30px;
+  text-align: center;
+  background:#F5F5F5;
+  } 
+
+
+.header-faq {
+  position:relative;
+  text-align:left;
+  background:#F5F5F5;
+  color:black;
+  text-align: center;
+  }
+
+
+.inicio-faq flex {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  }
+
+.flex { /*ANCHOR containers - flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+.animaçao-ondas {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Ajuste para o espaço no navegador Safari - gap*/
+  min-height:100px;
+  max-height:150px;
+  }
+
+.conteudo {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+  }
+
+  
+
+/* ANCHOR - Animação das ondas */
+
+.movimento > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  }
+
+.movimento > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+  }
+
+.movimento > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+  }
+
+.movimento > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.movimento > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+  }
+
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+  }
+
+/* ANCHOR FAQ - Versão mobile (menor) */
+
+@media (max-width: 768px) {
+  .animaçao-ondas {
+    height:40px;
+    min-height:40px;
+    }
+
+  .conteudo {
+    height:30vh;
+    }
+
+  h1 {      /*REVIEW FAQ - PONTO DE ATENÇÃO H1 MOBILE SEM CLASSE*/
+    font-size:2px;
+  }
+  }
+
+/* ANCHOR FAQ - PERGUNTAS */
+
+.faq-container1 {
+  display: inline-flexbox ;
+  justify-content: baseline;
+  margin: 20px 0;
+  padding: 20px;
+  margin: 10px;
+  }
+
+
+.perguntas {
+  border-bottom: 1px solid rgb(255, 172, 116);
+  border-radius: 10px;
+  padding-left: 70px;
+  text-align: left;
+  padding-top: 50px;
+  }
+
+.perguntas  input,
+.perguntas  .resposta {
+  display: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+
+.perguntas  label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%
+  }
+
+.perguntas  input:checked ~ .resposta {
+  display: block
+  }
+
+.paragrafo-faq1 {
+  text-align: center;
+  padding: 21px;
+  font-size: xx-large;
+  font-style: oblique;
+  font-weight: lighter
+  }
+
+
+.paragrafo-faq2 {
+  text-align: center;
+  padding: 20px;
+  font-size: xx-large;
+  font-style: normal;
+  font-weight: lighter
+  }
+
+  /*ANCHOR FAQ -  Fim do CSS do FAQ*/
