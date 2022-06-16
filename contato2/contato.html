@@ -11,21 +11,23 @@
       body {
           font-family: 'Roboto', sans-serif;
       }
-    </style>   
+    </style>
+    
 </head>
 
 
 <body>    
-
- <!-- ANCHOR Video --> 
+ANCHOR <!-- video -->
     <div class="container">
-        <div class="container__abertura">
+        <video src="/aerial_view_road_mountain4.mov" type = "video/mp4" preload = "preload" autoplay = "autoplay" loop = "loop"> Filmagens de stock por <a target="_blank" href="http://www.videezy.com">Videezy</a></video>
+        <!-- The video container -->
+        <div class="container__wrapper">
             <video class="container__video" src = "/video.mp4" preload = "preload" autoplay = "autoplay" loop = "loop">
             </video>
     </div>
     
-       
-        <div class="container__conteudo">
+        <!-- The content -->
+        <div class="container__content">
             <h1> Não importa onde você vá, nós estaremos lá!</h1>
         </div>
     </div>
@@ -34,17 +36,18 @@
 <!-- ANCHOR  Atendimento -->
     
 <div class="container3">
-       
+        <!-- Media object -->
     <div class="container__media">
             <img src="/surface-XdWkFaHI97c-unsplash.jpg" alt="" width="500px">
     </div>
     
-        
-    <div class="container__conteudo_atendimento">
+        <!-- Main content -->
+    <div class="container__content_atendimento">
             O cliente é nossa prioridade e por isso focamos em você! 
             Estamos prontos a atendê-los esteja onde estiver, em qualquer momento e por diversos meios!
             <br>
             <br>
+  
             Veja o que <br> separamos para você!
     </div>
 </div>
@@ -56,14 +59,19 @@
 <div class="container2">
 
     <div class="cartao">
-        <div class="cartao__imagem">
+        <!-- Cover -->
+        <div class="cartao__cover">
           <div class="titulo_cartao">
-            <img class = "background_cartao" src="/jeshoots-com-LtNvQHdKkmw-unsplash.jpg" alt="" width="100%">  
+            
+            <img class = "background_cartao" src="/jeshoots-com-LtNvQHdKkmw-unsplash.jpg" alt="          " width="100%">
+            
+            
         </div>
     
-     
+        <!-- Content -->
         
             <div class = "conteudo_cartao"> 
+            
               <ul>
               Conta Corrente<br><br>
               <hr>
@@ -75,21 +83,30 @@
               Encerramento de Conta <br>
   
               Outras opções <br>
+  
               </ul>
             
             </div>
         </div>
+        <h3>
+          
+        </h3>
     </div>
 
     <div class="cartao">
-      <div class="cartao__imagem">
+      <!-- Cover -->
+      <div class="cartao__cover">
         <div class="titulo_cartao">
-          <img class = "background_cartao" src="/docusign-xo3fdXgTJP8-unsplash.jpg" alt=" " width="100%">   
+          
+          <img class = "background_cartao" src="/docusign-xo3fdXgTJP8-unsplash.jpg" alt="          " width="100%">
+          
+          
       </div>
   
-  
+      <!-- Content -->
       
           <div class = "conteudo_cartao"> 
+          
             <ul>
             Cartão de Crédito<br><br>
             <hr>            
@@ -101,19 +118,28 @@
             Solicitar Cartão adicional <br>
             Outras opções <br>
             </ul>
-
+          
           </div>
       </div>
+      <h3>
+        
+      </h3>
   </div>
 
   <div class="cartao">
-    <div class="cartao__imagem">
+    <!-- Cover -->
+    <div class="cartao__cover">
       <div class="titulo_cartao">
-        <img class = "background_cartao" src="/piggybank-sK-ziQvKGsk-unsplash(1).jpg" alt=" " width="100%">   
-   </div>
+        
+        <img class = "background_cartao" src="/piggybank-sK-ziQvKGsk-unsplash(1).jpg" alt=" " width="100%">
+        
+        
+    </div>
 
- 
+    <!-- Content -->
+    
         <div class = "conteudo_cartao"> 
+        
           <ul>
           Investimento<br><br>
           <hr>
@@ -125,61 +151,79 @@
           Tesouro Direto <br>
           Outras opções <br>
           </ul>
+        
         </div>
-
     </div>
+    <h3>
+      
+    </h3>
 </div>
+
 </div>
         
 <hr>
 
-<!-- ANCHOR --Formulário de Contato -->
+<!-- ANCHOR --FORMS-->
 
 <section id="contato">
-    <h1 class="seçao-header">Contato</h1>
-    <div class="contato-abertura">
-      <form id="contato-formulario" class="formulario-horizontal" role="form">
-        <div class="grupo-do-formulario">
-          <div class="caixa-formulario">
-            <input type="text" class="campos-formulario" id="nome" placeholder="NOME" name="name" value="" required>
+  
+    <h1 class="section-header">Contato</h1>
+    
+    <div class="contato-wrapper">
+    
+    
+    <!-- Left contact page --> 
+      
+      <form id="contato-form" class="form-horizontal" role="form">
+         
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NOME" name="name" value="" required>
           </div>
         </div>
   
-        <div class="grupo-do-formulario">
-          <div class="caixa-formulario">
-            <input type="email" class="campos-formulario" id="email" placeholder="EMAIL" name="email" value="" required>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
           </div>
         </div>
   
-        <textarea class="campos-formulario" rows="10" placeholder="MENSSAGEM" name="mensagem" required></textarea>
+        <textarea class="form-control" rows="10" placeholder="MENSSAGEM" name="message" required></textarea>
         
-        <button class="btn btn-primary send-button" id="submeter" type="submit" value="Enviar">
-          <div class="botao-de-enviar">
-            <i class="fa fa-paper-plane"></i><span class="enviar-texto">ENVIAR</span>
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+          <div class="alt-send-button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">ENVIAR</span>
           </div>
+        
         </button>
         
       </form>
       <hr>      
+    <!-- Left contact page --> 
       
        
-    <div class = container-caixa-contato>   
-      <ul class="lista-de-contato">
-        <li class="lista-itens"><i class="fa fa-map-marker fa-2x"><p class="texto-para-contato lugar">Rua Esperança, 779 <br> São Pedro, SP <br> 09405-990</p></i></li>
-        <li class="lista-itens"><i class="fa fa-telefone fa-2x"><span class="texto-para-contato telefone"><a href="tel:1-212-555-5555" title="Ligue">(11) 555-2368</a></span></i></li>           
-        <li class="lista-itens"><i class="fa fa-envelope fa-2x"><span class="texto-para-contato gmail"><a href="mailto:#" title="Envie um e-mail">contato@h4bank.com</a></span></i></li>      
+    <div class = direct-contato-container>   
+      <ul class="contato-list">
+        <li class="list-item"><i class="fa fa-map-marker fa-2x"><p class="contato-text place">Rua Esperança, 779 <br> São Pedro, SP <br> 09405-990</p></i></li>
+            
+        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contato-text phone"><a href="tel:1-212-555-5555" title="Ligue">(11) 555-2368</a></span></i></li>
+
+                    
+        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contato-text gmail"><a href="mailto:#" title="Envie um e-mail">contato@h4bank.com</a></span></i></li>
+            
       </ul>
   
 
           
-    <div class="google-maps">
+    <div class="map-responsive">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0489544404!2d-46.8755035332196!3d-23.681531425212086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1655050501585!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    </div>                   
+    </div> 
+                      
     </div>
+ 
   </section>  
-</body>
-</html>
+
   
 
 
@@ -201,7 +245,8 @@
 
 
 
-
+</body>
+</html>
 
 
 
