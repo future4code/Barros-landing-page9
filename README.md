@@ -15,7 +15,7 @@ As tecnologias utilizadas foram:
 * HTML5
 * CSS3
 
-### Algumas imagens do projeto:
+##### Algumas imagens do projeto:
 
 
 
