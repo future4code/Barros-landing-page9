@@ -1,0 +1,377 @@
+/*Background com video */
+
+
+.container {
+    /* Used to position the video and content */
+    position: relative;
+}
+
+.container__wrapper {
+    /* Positioned at the top left corner */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Hide the scrollbar */
+    overflow: hidden;
+}
+
+.container__video {
+    object-fit: cover;
+
+    /* Center the video */
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Take full width */
+    width: 100%;
+}
+
+.container__content {
+    /* Positioned at the top left corner */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Inicio do atendimento*/
+
+.container3 {
+    /* Align sub-items to top */
+    align-items: start;
+    display: flex ;
+    height: 350px;
+    font: 400px;
+    font-size: xx-large;
+    font-style: oblique;
+    font-weight: lighter;
+    padding: 40px;
+     
+}
+
+.container__media {
+    margin-right: 16px;
+
+    /* Set the width for the media object */
+    width: 200px;
+    height: 200px
+}
+
+
+.container__content_atendimento {
+    /* Take the remaining width */
+    margin: 10px;
+    margin-left: 25%;
+    padding: 30px;
+    text-align: center;
+    
+   
+}
+
+/* ANCHOR Cartões de atendimento por categoria*/
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: bisque;
+    padding: 50px;
+    
+}
+.cartao {
+    
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    background-color: whitesmoke;
+    
+                        
+        padding-left: 8px;
+        padding-right: 8px;
+       
+        box-shadow:   0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        border-radius: 10px;
+        
+       
+        margin: 0px 8px 0px 60px;  /*Superior/Direita*/
+        
+                       
+}
+
+.cartao__cover {
+   
+    height: 150px;
+    width: 100%;
+    flex-basis: 25%;
+
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        
+                        border-radius: 10px;
+                        position: 
+                        /*border-color: blue;*/                        
+}
+
+
+.titulo_cartao {
+    /* Take available height */
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 8px;
+    color: white;
+    margin-top: 50px;
+    
+                          
+}
+
+.background_cartao {
+  background-image: url(/entrepreneur-startup-start-up-man-39866.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  clip-path: circle();
+}
+
+.conteudo_cartao {
+  color:dimgray;
+  text-align: left;
+  font-size: larger;
+  line-height: 2;
+  margin-top: 50px;
+}
+
+/* Animação dos cards*/
+
+.cartao:hover {
+    background: white;
+    box-shadow: none ;
+}
+
+.cartao:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid hwb(16 11% 0%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+
+
+ 
+
+
+/*ANCHOR --- Forms --- */
+
+
+  
+  #contato {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.985) ;
+    
+  }
+  
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  
+  .contato-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px ;
+    padding: 20px;
+    position: relative;
+    max-width: px;
+    
+    
+  }
+  
+  /* Left contact page */
+  .form-horizontal {
+    /*float: left;*/
+    max-width: 300px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+  
+  .form-control, 
+  textarea {
+    max-width: px;
+    width: 400px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-left: 50px;
+  }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    margin-left: 50px;
+  }
+  
+  .alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  
+  /* Location, Phone, Email Section */
+  .contato-list {
+    list-style-type: none;
+    margin-left: -20px;
+    padding-right: 20px;
+    
+    
+    
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+    
+    
+  }
+  
+  .contato-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+    
+  }
+  
+  .place {
+    margin-left: -250px;
+    
+    
+    
+  }
+  
+  .phone {
+    margin-left: -250px;
+  }
+  
+  .gmail {
+    margin-left: -250px;
+  }
+  
+  .contato-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    
+  }
+  
+  .contato-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+   
+ 
+  hr {
+    border-color: rgba(255,255,255,.6);
+  
+  }
+  
+  /* Begin Media Queries*/
+   
+  @media screen and (max-width: px) {
+  
+    .form-wrapper {
+      float: none;
+      margin: 0 ;
+      
+    }  
+    .form-control, textarea {
+    
+      margin: 0 ;
+    }
+   
+    
+    .name, .email, textarea {
+      width: 280px;
+    } 
+    
+    .direct-contato-container {
+      margin-top: 60px;
+      max-width: px;
+      ;
+      
+      
+    }  
+    
+    } 
+
+/* Direita contact page */
+/* ANCHOR ----Mapa----*/
+
+.map-responsive {
+    /*float: direita;*/
+    /*max-width: 400px;*/
+    font-family: 'Lato';
+    font-weight: 400;
+    margin-right: 20px;
+    margin-top: -55%;
+  
+    
+  }
+
+   
+.map-responsive iframe{
+    left:0;
+    top:0;
+    padding-left:50px ;
+    height:100%;
+    width:80%;
+   
+    
+}
+
+
+
+
+  
+
+  
+  

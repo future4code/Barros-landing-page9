@@ -11,8 +11,6 @@ header {
   top: 0;
   position: fixed
   widht:
-  
-  
 }
 
 body {
@@ -21,7 +19,7 @@ body {
 
 
 .cabeçalho {
- 
+
 }
 
 .cabeçalho-container {
@@ -29,15 +27,12 @@ body {
   width: 100%;
   align-items: center;
   display: flex;
-  flex-direction: row
-  
-  
+  flex-direction: row  
 }
 
 .cabeçalho-container {
   display: flex;
   flex-direction: row
-    
 }
 
 #divBusca{
@@ -75,11 +70,7 @@ body {
     grid-template-colums: 200px 50px; 100%;
     grid-template-rows: 200px 50px;
     border: 2px solid green;
-    
-    
   }
-
-  
 
   .coluna-atendimento1 {
     display: grid
@@ -93,7 +84,6 @@ body {
     height: 20rem;
     background:range;
     background-image: url("/img/Captura\ de\ tela\ 2022-06-07\ 200120.jpg");
-   
   }
 
   #section-atendimento1 {
@@ -104,33 +94,24 @@ body {
 
   }
 
- 
-
   .lista-quadro-branco {
       display:flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      
   }
 
   .icone-wrap {
     padding-top: 100px;    
   }
 
- 
-
 .quadro-opção1-interno {
     border: 1px solid;
     padding-bottom: 50px; 
     box-shadow: 2px 2px 2px gray;
-        
 }
 
 
-.conteudo-quadro-opção1 {
-   
-
-    
+.conteudo-quadro-opção1 { 
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -138,9 +119,7 @@ body {
   margin: 10px;
   border: 1px solid #c71585;
   border-radius: 10px;
-  width: 200px;
-  
-       
+  width: 200px;  
 }
 
 .faq-container1 {
@@ -150,7 +129,6 @@ margin: 20px 0;
 padding: 20px;
 margin: 10px;
 font-size: 25px;
-
 }
 
 h2 {
@@ -158,7 +136,6 @@ h2 {
   font-size: 35px;
   text-align: left ;
   padding: 20px;
-    
 }
 
 
@@ -205,15 +182,12 @@ h1 {
   font-style: oblique;
   text-align: right;
   line-height: 150%;  
-  
 }
 
 .redes-sociais{
 
   text-align: center ;
   display: inline
-  
-  
 }
 
 .endereço {
@@ -229,8 +203,6 @@ main {
 
 .perguntas-faq-container2 {
   background-color: #F5F5F5;
-
-  
 }
 
 .quadro-branco {
