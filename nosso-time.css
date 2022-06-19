@@ -25,10 +25,13 @@
     
     /* Configurando o título da página */
     .conteudo-nosso-time-titulo {
-        font-size: 45px;
-        text-align: center;
+        font-size: 40px;
+        color: white;
+        text-align: left;
+        padding: 20px;
         margin: 60px 0;
         text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+        background-color:  rgb(255, 143, 78);
     }
 
     /* Largura da imagem */
@@ -79,10 +82,13 @@
     
     /* Configurando o título da página */
     .conteudo-nosso-time-titulo {
-        font-size: 43px;
-        text-align: center;
+        font-size: 35px;
+        color: white;
+        text-align: left;
         margin: 50px 0;
+        padding: 18px;
         text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+        background-color:  rgb(255, 143, 78);
     }
 
     /* Largura da imagem */
@@ -127,10 +133,13 @@
     
     /* Configurando o título da página */
     .conteudo-nosso-time-titulo {
-        font-size: 40px;
-        text-align: center;
+        font-size: 35px;
+        color: white;
+        text-align: left;
         margin: 40px 0;
+        padding: 15px;
         text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+        background-color:  rgb(255, 143, 78);
     }
 
     /* Largura da imagem */
@@ -176,10 +185,13 @@
 
     /* Configurando o título da página */
     .conteudo-nosso-time-titulo {
-        font-size: 40px;
-        text-align: center;
+        font-size: 28px;
+        color: white;
+        text-align: left;
         margin: 40px 0;
+        padding: 10px;
         text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+        background-color:  rgb(255, 143, 78);
     }
 
     /* Largura da imagem */
