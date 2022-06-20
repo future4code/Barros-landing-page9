@@ -21,6 +21,7 @@
 body {
     background-color: #F5F5F5;
     font-family: 'roboto', 'Arial';
+    overflow-x: hidden;
 }
 
 
@@ -41,7 +42,7 @@ body {
     /* Posicionando o logo do header */
     .header-img {
         margin-left: 30px;
-        width: 15%;
+        width: 13%;
     }
 
     .header-img-width {

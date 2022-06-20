@@ -1,0 +1,141 @@
+:root {
+    --white: #ffffff;
+    --gray: #151211;
+    --light-gray: #262A2D;
+    --orange: #FF914D;
+    --yellow: #FFBD59;
+    --red: red;
+    --light-blue: #0061ff;
+    --dark-blue: #08189e;
+
+}
+
+
+/* QUEM SOMOS */
+.container-quem-somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.container-quem-somos p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+    margin: 70px 0;
+}
+
+.container-quem-somos span {
+    font-weight: 900;
+}
+
+#quem-somos h2 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    text-align: center;
+    background-color: rgb(255, 143, 78);
+    padding: 20px;
+    margin-top: 90px;
+}
+
+/* AVALIÇÕES DOS CLIENTES */
+.clientes h3 {
+    margin: 20px 0 30px 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+.avaliacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.avaliacoes img {
+    width: 400px;
+}
+
+.avaliacoes img:hover {
+    transform: scale(1.02);
+    transition: .3s;
+}
+
+/* RESPONSIVIDADE QUEM SOMOS */
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .container-quem-somos p {
+        width: 60%;
+    }
+
+    .sobre-nos {
+        padding: 20px;
+        margin-right: 100px;
+    }
+
+    .valores {
+        padding: 20px;
+    }
+
+    .avaliacoes img {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    .container-quem-somos p {
+
+        width: 80%;
+    }
+
+    .avaliacoes {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+    .container-quem-somos p {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    .clientes h3 {
+        font-size: 1.8rem;
+    }
+
+    .avaliacoes {
+        flex-direction: column;
+    }
+
+    .avaliacoes img {
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #quem-somos h2 {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .container-quem-somos p {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .clientes h3 {
+        font-size: 22px;
+    }
+
+    .avaliacoes {
+        flex-direction: column;
+    }
+
+    .avaliacoes img {
+        width: 320px;
+    }
+}

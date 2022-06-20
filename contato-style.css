@@ -1,0 +1,477 @@
+/* ------------------- STYLE DA PÁGINA DE CONTATO DO H4FBRANK ------------------- */
+
+/* --------------- RESPONSIVIDADE PARA TELA DESKTOP DE  1201px DE LARGURA ----------------------*/  
+@media screen and (min-device-width: 1201px){
+  #contato {
+      padding-top: 50px;
+  }
+  
+  /* STYLE TÍTULO */    
+  .titulo-sessao-contato{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    background-color: rgb(255, 143, 78);
+    padding: 20px;
+  }
+  
+  /* STYLE TEXTO DE INTRODUÇÃO */
+  .introduçao-contato{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 50px 0;
+    margin: 0 75px;
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  /* LARGURA IMAGEM */
+  .contato-img {
+    width: 100%;    
+  }
+
+  /* == STYLE DA SEÇÃO DE CARTÕES/OPÇÕES DE CONTATO POR CATEGORIA DE ATENDIMENTO  -->
+   (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) ===*/
+  .categoria-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    padding: 50px 0;
+    margin: 0 75px;
+  }
+  
+  /* STYLE DOS CARTÕES DAS CATEGORIAS DE ATENDIMENTO (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) DA SESSÃO CONTATO */
+  .cartao {      
+    background-color: rgb(236, 233, 233);
+    padding: 10px 0 10px 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  /* ANIMAÇÃO DO CARTÃO DE CONTATO POR CATEGORIA QUE FAZ ELES SALTAREM AUMENTANDO DE TAMANHO AO PASSAR O MOUSE SOBRE ELE */
+  .cartao:hover {
+    animation-duration: 0.25s;
+    border-left: 8px solid hwb(16 11% 0%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  }
+
+  /* STYLE DO CONTEÚDO DENTRO DOS CARTÕES DAS CATEGORIAS DE ATENDIMENTO (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) DA SESSÃO CONTATO =================*/ 
+  .conteudo_cartao {
+    color:dimgray;
+    text-align: left;
+    font-size: 18px;
+    line-height: 40px;
+    list-style: none;
+  }
+  
+  /* STYLE DA SEÇÃO FALE CONOSCO */
+  .fale-conosco {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: black;
+    padding: 50px 75px;
+  }
+  
+  /* STYLE TÍTULO SEÇÃO FALE CONOSCO */
+  .seçao-header {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+
+  /* STYLE DOS CAMPOS DO FORMULÁRIO FALE CONOSCO */
+  .campos-formulario, textarea {
+    width: 400px;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* BOTÃO */
+  .botao {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 400px;
+    font-size: 18px;
+  }
+  
+  /* ENDEREÇO */
+  .endereço {
+    font-size: 18px;
+    color: #bbb;
+    margin: 50px auto 0 auto;
+    line-height: 35px;
+  }
+  
+  /* STYLE ESPAÇO ENTRE TÍTULO DO CARTÃO E OPÇÕES DA LISTA DO CARTÃO */
+  hr {
+    border-color: rgba(255,255,255,.6);
+    margin-bottom: 20px;
+  }  
+}
+
+/* --------------- STYLE PARA TELAS ENTRE 801PX E 1200PX --------------- */
+@media screen and (min-device-width: 801px) and (max-device-width: 1200px) {
+  #contato {
+    padding-top: 40px;
+  }
+
+  /* STYLE TÍTULO */    
+  .titulo-sessao-contato{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    background-color: rgb(255, 143, 78);
+    padding: 15px;
+  }
+
+  /* STYLE TEXTO DE INTRODUÇÃO */
+  .introduçao-contato{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 40px 0;
+    margin: 0 60px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  /* LARGURA IMAGEM */
+  .contato-img {
+    width: 100%;    
+  }
+
+  /* == STYLE DA SEÇÃO DE CARTÕES/OPÇÕES DE CONTATO POR CATEGORIA DE ATENDIMENTO  -->
+  (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) ===*/
+  .categoria-contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    padding: 40px 0;
+    margin: 0 60px;
+  }
+
+  /* STYLE DOS CARTÕES DAS CATEGORIAS DE ATENDIMENTO (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) DA SESSÃO CONTATO */
+  .cartao {      
+    background-color: rgb(236, 233, 233);
+    padding: 10px 0 10px 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+    border-radius: 10px;
+  }
+
+  /* ANIMAÇÃO DO CARTÃO DE CONTATO POR CATEGORIA QUE FAZ ELES SALTAREM AUMENTANDO DE TAMANHO AO PASSAR O MOUSE SOBRE ELE */
+  .cartao:hover {
+    animation-duration: 0.25s;
+    border-left: 8px solid hwb(16 11% 0%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  }
+
+  /* STYLE DO CONTEÚDO DENTRO DOS CARTÕES DAS CATEGORIAS DE ATENDIMENTO (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) DA SESSÃO CONTATO =================*/ 
+  .conteudo_cartao {
+    color:dimgray;
+    text-align: left;
+    font-size: 16px;
+    line-height: 35px;
+    list-style: none;
+  }
+
+  /* STYLE DA SEÇÃO FALE CONOSCO */
+  .fale-conosco {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: black;
+    padding: 40px 60px;
+  }
+
+  /* STYLE TÍTULO SEÇÃO FALE CONOSCO */
+  .seçao-header {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+
+  /* STYLE DOS CAMPOS DO FORMULÁRIO FALE CONOSCO */
+  .campos-formulario, textarea {
+    width: 350px;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* BOTÃO */
+  .botao {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 350px;
+    font-size: 16px;
+  }
+
+  /* ENDEREÇO */
+  .endereço {
+    font-size: 16px;
+    color: #bbb;
+    margin: 50px auto 0 auto;
+    line-height: 35px;
+  }
+
+  /* STYLE ESPAÇO ENTRE TÍTULO DO CARTÃO E OPÇÕES DA LISTA DO CARTÃO */
+  hr {
+    border-color: rgba(255,255,255,.6);
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+/* -------------- STYLE PARA TELAS COM TAMANHO ENTRE 481PX E 800PX --------------- */
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  #contato {
+    padding-top: 45px;
+  }
+
+  /* STYLE TÍTULO */    
+  .titulo-sessao-contato{
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    background-color: rgb(255, 143, 78);
+    padding: 10px;
+  }
+
+  /* STYLE TEXTO DE INTRODUÇÃO */
+  .introduçao-contato{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    font-size: 15px;
+    padding: 40px 0;
+    margin: 0 40px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  /* LARGURA E MARGEM DA IMAGEM */
+  .contato-img {
+    margin-top: 30px;
+    width: 100%;    
+  }
+
+  /* == STYLE DA SEÇÃO DE CARTÕES/OPÇÕES DE CONTATO POR CATEGORIA DE ATENDIMENTO  -->
+  (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) ===*/
+  .categoria-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+    margin: 0 40px;
+  }
+
+  /* STYLE DOS CARTÕES DAS CATEGORIAS DE ATENDIMENTO (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) DA SESSÃO CONTATO */
+  .cartao {      
+    background-color: rgb(236, 233, 233);
+    padding: 10px 0 10px 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+    border-radius: 10px;
+  }
+
+  /* ANIMAÇÃO DO CARTÃO DE CONTATO POR CATEGORIA QUE FAZ ELES SALTAREM AUMENTANDO DE TAMANHO AO PASSAR O MOUSE SOBRE ELE */
+  .cartao:hover {
+    animation-duration: 0.25s;
+    border-left: 8px solid hwb(16 11% 0%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  }
+
+  /* STYLE DO CONTEÚDO DENTRO DOS CARTÕES DAS CATEGORIAS DE ATENDIMENTO (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) DA SESSÃO CONTATO =================*/ 
+  .conteudo_cartao {
+    color:dimgray;
+    text-align: left;
+    font-size: 15px;
+    line-height: 30px;
+    list-style: none;
+  }
+
+  /* STYLE DA SEÇÃO FALE CONOSCO */
+  .fale-conosco {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 30px 40px;
+  }
+
+  /* STYLE TÍTULO SEÇÃO FALE CONOSCO */
+  .seçao-header {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+
+  /* STYLE DOS CAMPOS DO FORMULÁRIO FALE CONOSCO */
+  .campos-formulario, textarea {
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* BOTÃO */
+  .botao {
+    display: block;
+    margin: 8px auto;
+    padding: 8px;
+    width: 300px;
+    font-size: 15px;
+  }
+
+  /* ENDEREÇO */
+  .endereço {
+    font-size: 15px;
+    color: #bbb;
+    margin: 40px auto 0 auto;
+    line-height: 30px;
+  }
+
+  /* STYLE ESPAÇO ENTRE TÍTULO DO CARTÃO E OPÇÕES DA LISTA DO CARTÃO */
+  hr {
+    border-color: rgba(255,255,255,.6);
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* ---------------- STYLE PARA TELAS COM TAMANHO ENTRE 320PX E 480PX ----------------- */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #contato {
+    padding-top: 45px;
+  }
+
+  /* STYLE TÍTULO */    
+  .titulo-sessao-contato{
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    background-color: rgb(255, 143, 78);
+    padding: 10px;
+  }
+
+  /* STYLE TEXTO DE INTRODUÇÃO */
+  .introduçao-contato{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    font-size: 14px;
+    padding: 35px 0;
+    margin: 0 40px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  /* LARGURA E MARGEM DA IMAGEM */
+  .contato-img {
+    margin-top: 30px;
+    width: 100%;    
+  }
+
+  /* == STYLE DA SEÇÃO DE CARTÕES/OPÇÕES DE CONTATO POR CATEGORIA DE ATENDIMENTO  -->
+  (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) ===*/
+  .categoria-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 40px 0;
+    margin: 0 30px;
+  }
+
+  /* STYLE DOS CARTÕES DAS CATEGORIAS DE ATENDIMENTO (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) DA SESSÃO CONTATO */
+  .cartao {      
+    background-color: rgb(236, 233, 233);
+    padding: 10px 0 10px 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+    border-radius: 10px;
+  }
+
+  /* ANIMAÇÃO DO CARTÃO DE CONTATO POR CATEGORIA QUE FAZ ELES SALTAREM AUMENTANDO DE TAMANHO AO PASSAR O MOUSE SOBRE ELE */
+  .cartao:hover {
+    animation-duration: 0.25s;
+    border-left: 8px solid hwb(16 11% 0%);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  }
+
+  /* STYLE DO CONTEÚDO DENTRO DOS CARTÕES DAS CATEGORIAS DE ATENDIMENTO (CONTA CORRENTE, CARTÃO DE CRÉDITO, INVESTIMENTO) DA SESSÃO CONTATO =================*/ 
+  .conteudo_cartao {
+    color:dimgray;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+    list-style: none;
+  }
+
+  /* STYLE DA SEÇÃO FALE CONOSCO */
+  .fale-conosco {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 25px 30px;
+  }
+
+  /* STYLE TÍTULO SEÇÃO FALE CONOSCO */
+  .seçao-header {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  /* STYLE DOS CAMPOS DO FORMULÁRIO FALE CONOSCO */
+  .campos-formulario, textarea {
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* BOTÃO */
+  .botao {
+    display: block;
+    margin: 8px auto;
+    padding: 8px;
+    width: 300px;
+    font-size: 14px;
+  }
+
+  /* ENDEREÇO */
+  .endereço {
+    font-size: 14px;
+    color: #bbb;
+    margin: 40px auto 0 auto;
+    line-height: 30px;
+  }
+
+  /* STYLE ESPAÇO ENTRE TÍTULO DO CARTÃO E OPÇÕES DA LISTA DO CARTÃO */
+  hr {
+    border-color: rgba(255,255,255,.6);
+    margin-bottom: 20px;
+  }
+}
