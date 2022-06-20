@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-
-
 /* VARIAVEIS */
 :root {
     --white: #ffffff;
@@ -32,22 +29,20 @@
     padding-right: 50px;
     width: 300px;
 }
+
 #home {
     display: flex;
-    margin-top: 4%;
+    margin-top: 70px;
 }
-
 
 .info {
     display: flex;
     flex-direction: column;
-    padding-left: 200px;
-    margin-top: 10%;
+    margin: 0 75px;
 }
 
 .phone img {
     width: 600px;
-    padding-right: 250px;
 }
 
 .info h1 {
@@ -55,15 +50,14 @@
     font-size: 3rem;
     color: var(--gray);
     padding-bottom: 50px;
-
 }
 
 .info p {
     font-weight: 400;
     padding-bottom: 50px;
-    max-width: 70%;
     color: var(--light-gray);
-    font-size: 1.2rem;
+    font-size: 20px;
+    line-height: 30px;
     text-align: justify;
 }
 
@@ -127,13 +121,6 @@
     background-image: url(./img/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg);
     margin-top: 100px;
     padding-bottom: 200px;
-}
-
-.credit-card::before {
-    content: '';
-    position: absolute;
-    width: 600px;
-    height: 400px;
 }
 
 .card {
@@ -298,29 +285,26 @@
 
 
 /*  RESPONSIVIDADE INFO */
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
     .info {
-        padding-left: 100px;
+        justify-content: center;
     }
-
+    
     .info h1 {
-        font-size: 2.5rem;
+        font-size: 40px;
     }
 
     .info a {
-        width: 120px;
-        height: 15px;
-        font-size: 15px;
+        padding: 20px;
+        font-size: 19px;
     }
 
     .info p {
-        font-size: 1.2rem;
+        font-size: 20px;
     }
 
     .phone img {
-        padding-right: 50px;
-        width: 450px;
+        width: 90%;
     }
 
 /* RESPONSIVIDADE CARTÃO */
@@ -372,6 +356,7 @@
     }
 
     .credit-card {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -385,7 +370,7 @@
     }
 
     .info{
-        padding-left: 90px;
+        margin: 0 60px;
     }
 
     .info h1 {
@@ -412,6 +397,7 @@
     }
 
     .credit-card {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -425,14 +411,12 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px){
     .info {
-        padding-left: 90px;
+        margin: 20px 30px 0 30px;
     }
     
     .info h1 {
-        font-size: 1.5rem;
-        margin-right: 50px;
+        font-size: 26px;
         padding-bottom: 30px;
-
     }
 
     .phone img {
@@ -440,25 +424,28 @@
     }
 
     .info p {
-        font-size: 17px;
-
+        font-size: 15px;
     }
 
     .info a {
         margin-left: 50px;
-        width: 100px;
-        height: 15px;
-        font-size: 13px;
+        padding: 15px 10px;
+        font-size: 15px;
+    }
+
+    .info-cartao p, .info-cartao h1 {
+        font-size: 20px;
     }
 
     .credit-card {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
     .card {
-        width: 350px;
+        display: none;
     }
-}
 
+}

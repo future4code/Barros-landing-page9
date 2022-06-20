@@ -1,188 +1,287 @@
-/*ANCHOR FAQ - Início do CSS do FAQ*/
+/* ------------------ STYLE DA PÁGINA FAQ DO H4FBRANK ----------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@100&display=swap');
+/* --------------- STYLE PARA TELAS DE NO MÍNIMO 1201PX --------------- */
 @media screen and (min-device-width: 1201px) {
-* {
-  padding: 0;
-  margin: 0;
+  #faq {
+    padding-top: 40px;
+  }
+  
+  /* STYLE TÍTULO */
+  .h2-faq {
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    text-align: center;
+    background: rgb(255, 143, 78);
+    padding: 20px;
   }
 
+  /* STYLE DO TEXTO DE INTRODUÇÃO */
+  .texto-introduçao-faq {
+    text-align: center;
+    padding: 50px;
+    font-size: 21px;
+    line-height: 55px;
+    margin: 0 75px;
+  }
 
- 
-
-.h1-faq {
-  font-family:roboto;
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:100px;
-  padding: 30px;
-  text-align: center;
-  background:#F5F5F5;
+  /* STYLE DAS IMAGENS ABAIXO DO TEXTO DE INTRODUÇÃO */
+  .introduçao-faq {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+    padding: 50px 0;
+    margin: 0 75px;
   } 
 
-
-.header-faq {
-  position:relative;
-  background:#F5F5F5;
-  color:black;
-  text-align: center;
-  
+  /* STYLE DO SUBTÍTULO ("VAMOS COMEÇAR?") */
+  .titulo-perguntas-faq {
+    text-align: center;
+    font-size: 36px;
+    margin: 25px 0;
   }
 
-
-.inicio-faq flex {
-  height:65vh;
-  width:100%;
-  margin: 0;
-  padding: 0;
-  
+  /* STYLE DA SEÇÃO DE PERGUNTAS */
+  .perguntas {
+    border-bottom: 1px solid rgb(255, 172, 116);
+    text-align: left;
+    padding-top: 50px;
+    font-size: 20px;
   }
 
-.flex { /*ANCHOR containers - flexbox */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  /* STYLE DAS PERGUNTAS DO FAQ */
+  .perguntas label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin: 0 75px;
   }
 
-.animaçao-ondas {
-  position:relative;
-  width: 100%;
-  height:15vh;
-  margin-bottom:-7px; /*Ajuste para o espaço no navegador Safari - gap*/
-  min-height:100px;
-  max-height:150px;
+  /* STYLE DA ABERTURA E FECHAMENTO DAS PERGUNTAS */
+  .perguntas  input, .resposta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+    margin: 0 75px;
   }
-
-.conteudo {
-  position:relative;
-  height:20vh;
-  text-align:center;
-  background-color: white;
+    
+  .perguntas  input:checked ~ .resposta {    
+    display: block
   }
-
-  .paragrafo1 {
-  font-family:roboto;
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:100px;
-  padding: 30px;
-  text-align: center;
-  }
-
-  .paragrafo2 {
-  font-family:roboto;
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:100px;
-  padding: 30px;
-  text-align: center;
-  }
-
-/* ANCHOR - Animação das ondas */
-
-.movimento > use {
-  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
-  }
-
-.movimento > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-  }
-
-.movimento > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-  }
-
-.movimento > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
 }
 
-.movimento > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
+
+/* ------------ STYLE PARA TELAS COM TAMANHO ENTRE 801PX E 1200PX -------------- */
+@media screen and (min-device-width: 801px) and (max-device-width: 1200px) {
+  #faq {
+    padding-top: 40px;
+  }
+  
+  /* STYLE TÍTULO */
+  .h2-faq {
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    padding: 15px;
+    text-align: center;
+    background: rgb(255, 143, 78);
   }
 
-@keyframes move-forever {
-  0% {
-   transform: translate3d(-90px,0,0);
-  }
-  100% { 
-    transform: translate3d(85px,0,0);
-  }
-  }
-
-/* ANCHOR FAQ - Versão mobile (menor) */
-
-@media (max-width: 768px) {
-  .animaçao-ondas {
-    height:40px;
-    min-height:40px;
-    }
-
-  .conteudo {
-    height:30vh;
-    }
-
-  h1 {      /*REVIEW FAQ - PONTO DE ATENÇÃO H1 MOBILE SEM CLASSE*/
-    font-size:2px;
-  }
+  /* STYLE DO TEXTO DE INTRODUÇÃO */
+  .texto-introduçao-faq {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    line-height: 50px;
+    margin: 0 60px;
   }
 
-/* ANCHOR FAQ - PERGUNTAS */
+  /* STYLE DAS IMAGENS ABAIXO DO TEXTO DE INTRODUÇÃO */
+  .introduçao-faq {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 40px;
+    padding: 40px 0;
+    margin: 0 60px;
+  } 
 
-.faq-container1 {
-  display: inline-flexbox ;
-  justify-content: baseline;
-  margin: 20px 0;
-  padding: 20px;
-  margin: 10px;
+  /* STYLE DO SUBTÍTULO ("VAMOS COMEÇAR?") */
+  .titulo-perguntas-faq {
+    text-align: center;
+    font-size: 30px;
   }
 
-
-.perguntas {
-  border-bottom: 1px solid rgb(255, 172, 116);
-  border-radius: 10px;
-  padding-left: 70px;
-  text-align: left;
-  padding-top: 50px;
+  /* STYLE DA SEÇÃO DE PERGUNTAS */
+  .perguntas {
+    border-bottom: 1px solid rgb(255, 172, 116);
+    text-align: left;
+    padding-top: 40px;
   }
 
-.perguntas  input,
-.perguntas  .resposta {
-  display: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* STYLE DAS PERGUNTAS DO FAQ */
+  .perguntas label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin: 0 60px;
   }
 
-.perguntas  label {
-  display: inline-block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  width: 100%
+  /* STYLE DA ABERTURA E FECHAMENTO DAS PERGUNTAS */
+  .perguntas  input, .resposta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+    margin: 0 60px;
   }
-
-.perguntas  input:checked ~ .resposta {
-  display: block
+    
+  .perguntas  input:checked ~ .resposta {    
+    display: block
   }
-
-.paragrafo-faq1 {
-  text-align: center;
-  padding: 21px;
-  font-size: xx-large;
-  font-style: oblique;
-  font-weight: lighter
-  }
+}
 
 
-.paragrafo-faq2 {
-  text-align: center;
-  padding: 20px;
-  font-size: xx-large;
-  font-style: normal;
-  font-weight: lighter
+
+
+/* -------------- STYLE PARA TELAS COM TAMANHO ENTRE 481PX E 800PX --------------- */
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  #faq {
+    padding-top: 40px;
   }
+  
+  /* STYLE TÍTULO */
+  .h2-faq {
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    padding: 12px;
+    text-align: center;
+    background: rgb(255, 143, 78);
   }
-  /*ANCHOR FAQ -  Fim do CSS do FAQ*/
+
+  /* STYLE DO TEXTO DE INTRODUÇÃO */
+  .texto-introduçao-faq {
+    text-align: center;
+    padding: 35px;
+    font-size: 15px;
+    line-height: 40px;
+    margin: 0 40px;
+  }
+
+  /* STYLE DAS IMAGENS ABAIXO DO TEXTO DE INTRODUÇÃO */
+  .introduçao-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+    margin: 0 40px;
+  } 
+
+  /* STYLE DO SUBTÍTULO ("VAMOS COMEÇAR?") */
+  .titulo-perguntas-faq {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  /* STYLE DA SEÇÃO DE PERGUNTAS */
+  .perguntas {
+    border-bottom: 1px solid rgb(255, 172, 116);
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  /* STYLE DAS PERGUNTAS DO FAQ */
+  .perguntas label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin: 0 40px;
+  }
+
+  /* STYLE DA ABERTURA E FECHAMENTO DAS PERGUNTAS */
+  .perguntas  input, .resposta {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: none;
+    margin: 0 40px;
+  }
+    
+  .perguntas  input:checked ~ .resposta {    
+    display: block
+  }
+}
+
+
+
+
+/* ---------------- STYLE PARA TELAS COM TAMANHO ENTRE 320PX E 480PX ----------------- */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* STYLE TÍTULO */
+  #faq {
+    padding-top: 40px;
+  }
+
+  .h2-faq {
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    padding: 10px;
+    text-align: center;
+    background: rgb(255, 143, 78);
+  }
+
+  /* STYLE DO TEXTO DE INTRODUÇÃO */
+  .texto-introduçao-faq {
+    text-align: center;
+    padding: 35px;
+    font-size: 14px;
+    line-height: 38px;
+    margin: 0 30px;
+  }
+
+  /* STYLE DAS IMAGENS ABAIXO DO TEXTO DE INTRODUÇÃO */
+  .introduçao-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 0;
+    margin: 0 30px;
+  } 
+
+  /* STYLE DO SUBTÍTULO ("VAMOS COMEÇAR?") */
+  .titulo-perguntas-faq {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  /* STYLE DA SEÇÃO DE PERGUNTAS */
+  .perguntas {
+    border-bottom: 1px solid rgb(255, 172, 116);
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  /* STYLE DAS PERGUNTAS DO FAQ */
+  .perguntas label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin: 0 30px;
+  }
+
+  /* STYLE DA ABERTURA E FECHAMENTO DAS PERGUNTAS */
+  .perguntas  input, .resposta {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: none;
+    margin: 0 30px;
+  }
+    
+  .perguntas  input:checked ~ .resposta {    
+    display: block
+  }
+}
