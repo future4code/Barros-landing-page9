@@ -25,4 +25,4 @@ As tecnologias utilizadas foram:
 ![projeto-landing-page-6](https://user-images.githubusercontent.com/102267713/174408365-46659580-f542-488a-9662-48a885faaec1.png)
 
 ##### Link do surge:
-fixed-respect.surge.sh
+https://brown-wire.surge.sh/
