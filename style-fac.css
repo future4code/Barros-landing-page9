@@ -1,0 +1,287 @@
+/* ------------------ STYLE DA PÁGINA FAQ DO H4FBRANK ----------------- */
+
+/* --------------- STYLE PARA TELAS DE NO MÍNIMO 1201PX --------------- */
+@media screen and (min-device-width: 1201px) {
+  #faq {
+    padding-top: 40px;
+  }
+  
+  /* STYLE TÍTULO */
+  .h2-faq {
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    text-align: center;
+    background: rgb(255, 143, 78);
+    padding: 20px;
+  }
+
+  /* STYLE DO TEXTO DE INTRODUÇÃO */
+  .texto-introduçao-faq {
+    text-align: center;
+    padding: 50px;
+    font-size: 21px;
+    line-height: 55px;
+    margin: 0 75px;
+  }
+
+  /* STYLE DAS IMAGENS ABAIXO DO TEXTO DE INTRODUÇÃO */
+  .introduçao-faq {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+    padding: 50px 0;
+    margin: 0 75px;
+  } 
+
+  /* STYLE DO SUBTÍTULO ("VAMOS COMEÇAR?") */
+  .titulo-perguntas-faq {
+    text-align: center;
+    font-size: 36px;
+    margin: 25px 0;
+  }
+
+  /* STYLE DA SEÇÃO DE PERGUNTAS */
+  .perguntas {
+    border-bottom: 1px solid rgb(255, 172, 116);
+    text-align: left;
+    padding-top: 50px;
+    font-size: 20px;
+  }
+
+  /* STYLE DAS PERGUNTAS DO FAQ */
+  .perguntas label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin: 0 75px;
+  }
+
+  /* STYLE DA ABERTURA E FECHAMENTO DAS PERGUNTAS */
+  .perguntas  input, .resposta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+    margin: 0 75px;
+  }
+    
+  .perguntas  input:checked ~ .resposta {    
+    display: block
+  }
+}
+
+
+/* ------------ STYLE PARA TELAS COM TAMANHO ENTRE 801PX E 1200PX -------------- */
+@media screen and (min-device-width: 801px) and (max-device-width: 1200px) {
+  #faq {
+    padding-top: 40px;
+  }
+  
+  /* STYLE TÍTULO */
+  .h2-faq {
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    padding: 15px;
+    text-align: center;
+    background: rgb(255, 143, 78);
+  }
+
+  /* STYLE DO TEXTO DE INTRODUÇÃO */
+  .texto-introduçao-faq {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    line-height: 50px;
+    margin: 0 60px;
+  }
+
+  /* STYLE DAS IMAGENS ABAIXO DO TEXTO DE INTRODUÇÃO */
+  .introduçao-faq {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 40px;
+    padding: 40px 0;
+    margin: 0 60px;
+  } 
+
+  /* STYLE DO SUBTÍTULO ("VAMOS COMEÇAR?") */
+  .titulo-perguntas-faq {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  /* STYLE DA SEÇÃO DE PERGUNTAS */
+  .perguntas {
+    border-bottom: 1px solid rgb(255, 172, 116);
+    text-align: left;
+    padding-top: 40px;
+  }
+
+  /* STYLE DAS PERGUNTAS DO FAQ */
+  .perguntas label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin: 0 60px;
+  }
+
+  /* STYLE DA ABERTURA E FECHAMENTO DAS PERGUNTAS */
+  .perguntas  input, .resposta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+    margin: 0 60px;
+  }
+    
+  .perguntas  input:checked ~ .resposta {    
+    display: block
+  }
+}
+
+
+
+
+/* -------------- STYLE PARA TELAS COM TAMANHO ENTRE 481PX E 800PX --------------- */
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  #faq {
+    padding-top: 40px;
+  }
+  
+  /* STYLE TÍTULO */
+  .h2-faq {
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    padding: 12px;
+    text-align: center;
+    background: rgb(255, 143, 78);
+  }
+
+  /* STYLE DO TEXTO DE INTRODUÇÃO */
+  .texto-introduçao-faq {
+    text-align: center;
+    padding: 35px;
+    font-size: 15px;
+    line-height: 40px;
+    margin: 0 40px;
+  }
+
+  /* STYLE DAS IMAGENS ABAIXO DO TEXTO DE INTRODUÇÃO */
+  .introduçao-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+    margin: 0 40px;
+  } 
+
+  /* STYLE DO SUBTÍTULO ("VAMOS COMEÇAR?") */
+  .titulo-perguntas-faq {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  /* STYLE DA SEÇÃO DE PERGUNTAS */
+  .perguntas {
+    border-bottom: 1px solid rgb(255, 172, 116);
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  /* STYLE DAS PERGUNTAS DO FAQ */
+  .perguntas label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin: 0 40px;
+  }
+
+  /* STYLE DA ABERTURA E FECHAMENTO DAS PERGUNTAS */
+  .perguntas  input, .resposta {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: none;
+    margin: 0 40px;
+  }
+    
+  .perguntas  input:checked ~ .resposta {    
+    display: block
+  }
+}
+
+
+
+
+/* ---------------- STYLE PARA TELAS COM TAMANHO ENTRE 320PX E 480PX ----------------- */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* STYLE TÍTULO */
+  #faq {
+    padding-top: 40px;
+  }
+
+  .h2-faq {
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.219);
+    padding: 10px;
+    text-align: center;
+    background: rgb(255, 143, 78);
+  }
+
+  /* STYLE DO TEXTO DE INTRODUÇÃO */
+  .texto-introduçao-faq {
+    text-align: center;
+    padding: 35px;
+    font-size: 14px;
+    line-height: 38px;
+    margin: 0 30px;
+  }
+
+  /* STYLE DAS IMAGENS ABAIXO DO TEXTO DE INTRODUÇÃO */
+  .introduçao-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 0;
+    margin: 0 30px;
+  } 
+
+  /* STYLE DO SUBTÍTULO ("VAMOS COMEÇAR?") */
+  .titulo-perguntas-faq {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  /* STYLE DA SEÇÃO DE PERGUNTAS */
+  .perguntas {
+    border-bottom: 1px solid rgb(255, 172, 116);
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  /* STYLE DAS PERGUNTAS DO FAQ */
+  .perguntas label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin: 0 30px;
+  }
+
+  /* STYLE DA ABERTURA E FECHAMENTO DAS PERGUNTAS */
+  .perguntas  input, .resposta {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: none;
+    margin: 0 30px;
+  }
+    
+  .perguntas  input:checked ~ .resposta {    
+    display: block
+  }
+}

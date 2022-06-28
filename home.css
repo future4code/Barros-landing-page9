@@ -1,0 +1,451 @@
+/* VARIAVEIS */
+:root {
+    --white: #ffffff;
+    --gray: #151211;
+    --light-gray: #262A2D;
+    --orange: #FF914D;
+    --yellow: #FFBD59;
+    --red: red;
+    --light-blue: #0061ff;
+    --dark-blue: #08189e;
+
+}
+
+
+/* RESET */
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* SESSÃO GRABRIEL (HOME) */
+
+
+/* -----------INFO----------- */
+.phone img {
+    padding-right: 50px;
+    width: 300px;
+}
+
+#home {
+    display: flex;
+    margin-top: 70px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 75px;
+}
+
+.phone img {
+    width: 600px;
+}
+
+.info h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--gray);
+    padding-bottom: 50px;
+}
+
+.info p {
+    font-weight: 400;
+    padding-bottom: 50px;
+    color: var(--light-gray);
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.info span {
+    font-weight: 900;
+}
+
+.info a {
+    width: 150px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 200%);
+    text-decoration: none;
+    text-align: center;
+    color: var(--white);
+    font-weight: 700;
+    -webkit-box-shadow: 2px 12px 13px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 2px 12px 13px -3px rgba(0, 0, 0, 0.27);
+}
+
+.info a:hover {
+    background: #FCA97F;
+}
+
+
+/* -----------CARTÃO----------- */
+
+.flex {
+    display: flex
+}
+
+.absolute {
+    position: absolute
+}
+
+.info-cartao {
+    width: 50%;
+}
+
+.info-cartao h1 {
+    margin-top: 200px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 900;
+}
+
+.info-cartao p {
+    font-size: 1.5rem;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.credit-card {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    background-image: url(./img/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg);
+    margin-top: 100px;
+    padding-bottom: 200px;
+}
+
+.card {
+    margin-top: 150px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+
+.card .face {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(255 255 255 / 20%);
+    border-radius: 10px;
+    background: linear-gradient(to right, #FF914D 0%, #f9d423 200%);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 0px 0px rgb(255 255 255 / 20%);
+    transform-style: preserve-3d;
+    transition: 0.75s ease-in-out;
+    backface-visibility: hidden;
+    transform: rotateY(0);
+}
+
+#chip {
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 50px;
+}
+
+#signal {
+    width: 25px;
+    height: 25px;
+    top: 115px;
+    left: 115px;
+    transform: rotate(90deg);
+}
+
+#logo {
+    width: 85px;
+    height: 85px;
+    bottom: 30px;
+    left: 40px;
+}
+
+#owner {
+    bottom: 55px;
+    left: 140px;
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.card .face.back {
+    transform: rotateY(180deg);
+}
+
+#greybar {
+    width: 100%;
+    height: 50px;
+    top: 15px;
+    background: var(--gray);
+    border-radius: 10px 10px 0px 0px;
+}
+
+#card-info {
+    width: 100%;
+    bottom: 15px;
+    padding: 0 20px;
+    color: var(--white);
+}
+
+#card-number {
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+#card-info .information:not(:first-child) {
+    margin-left: 10px;
+}
+
+#card-info .flex .information {
+    align-items: center;
+}
+
+#card-info .flex .information .label {
+    display: block;
+    font-size: 0.4rem;
+    margin-right: 4px;
+    width: 30px;
+}
+
+.card .face.front::before,
+.card .face.front::after,
+.card .face.back::before,
+.card .face.back::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+
+.card .face.front::before,
+.card .face.front::after {
+    top: 10px;
+    mix-blend-mode: overlay;
+}
+
+
+.card .face.back::before,
+.card .face.back::after {
+    bottom: 30px;
+    mix-blend-mode: hue;
+}
+
+.card .face.front::before {
+    right: 20px;
+}
+
+.card .face.back::before {
+    right: 20px;
+}
+
+.card .face.front::after {
+    right: 45px;
+}
+
+.card .face.back::after {
+    right: 45px;
+}
+
+.card .face.front::before {
+    background: yellow;
+}
+
+.card .face.back::before {
+    background: var(--light-blue);
+}
+
+.card .face.front::after {
+    background-color: red;
+}
+
+.card .face.back::after {
+    background-color: var(--dark-blue);
+}
+
+.card:hover .face.front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .face.back {
+    transform: rotateY(360deg);
+}
+
+
+/* ----------- RESPONSIVIDADE GABRIEL -------------- */
+
+
+/*  RESPONSIVIDADE INFO */
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .info {
+        justify-content: center;
+    }
+    
+    .info h1 {
+        font-size: 40px;
+    }
+
+    .info a {
+        padding: 20px;
+        font-size: 19px;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    .phone img {
+        width: 90%;
+    }
+
+/* RESPONSIVIDADE CARTÃO */
+    .credit-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        margin-top: 80px;
+    }
+
+    .info-cartao {
+        text-align: center;
+    }
+
+    .info-card h1 {
+        font-size: 2.5rem;
+    }
+
+    .info-cartao p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px){
+    .phone img {
+        display: none;
+    }
+
+    .info h1 {
+        font-size: 2.2rem;
+    }
+
+    .info p {
+        font-size: 1.1rem;
+    }
+    
+    .info-cartao p {
+        font-size: 1.2rem;
+    }
+
+    .info a {
+        width: 100px;
+        height: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .credit-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 800px){
+    .phone img {
+        display: none;
+    }
+
+    .info{
+        margin: 0 60px;
+    }
+
+    .info h1 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .info-cartao h1 {
+        font-size: 2.5rem;
+    }
+
+    .info-cartao p {
+        font-size: 1.2rem;
+    }
+
+    .info a {
+        margin-left: 100px;
+        width: 100px;
+        height: 15px;
+        font-size: 13px;
+    }
+
+    .credit-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 400px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .info {
+        margin: 20px 30px 0 30px;
+    }
+    
+    .info h1 {
+        font-size: 26px;
+        padding-bottom: 30px;
+    }
+
+    .phone img {
+        display: none;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+
+    .info a {
+        margin-left: 50px;
+        padding: 15px 10px;
+        font-size: 15px;
+    }
+
+    .info-cartao p, .info-cartao h1 {
+        font-size: 20px;
+    }
+
+    .credit-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        display: none;
+    }
+
+}

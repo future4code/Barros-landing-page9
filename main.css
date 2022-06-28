@@ -1,0 +1,516 @@
+@charset "UTF-8";
+
+
+/* FONTE */
+@font-face {
+    font-family: 'roboto';
+    src: url('font/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BODY PARA TODOS OS TAMANHOS DE TELA*/
+body {
+    background-color: #F5F5F5;
+    font-family: 'roboto', 'Arial';
+    overflow-x: hidden;
+}
+
+
+/* ------------------------ STYLE DO HEADER PARA TELA DE NO MÍNIMO 1201PX ------------------------- */
+@media screen and (min-device-width: 1201px) {
+    
+    /* --------------------------------- HEADER ----------------------------------- */
+    /* Header geral */
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 143, 78);
+        position: sticky;
+        top: 0;
+        padding: 0 32px;
+    }
+
+    /* Posicionando o logo do header */
+    .header-img {
+        margin-left: 30px;
+        width: 13%;
+    }
+
+    .header-img-width {
+        width: 70%;
+    }
+
+    /* Posicionando o menu */
+    .header-links {
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 225px;
+        width: 75%;
+    }
+
+    /* Estilizando cada link do menu */
+    .header-links-item {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        padding: 0 18px;
+    }
+
+    /* Efeito hover dos links do menu */
+    .header-links-item:hover {
+        background-color: #f5f5f53b;
+        margin: 0 2px;
+        padding: 14px 16px;
+        border-radius: 40px;
+    }
+}
+
+
+
+/* ------------------- STYLE DO HEADER PARA TELAS ENTRE 801PX E 1200PX ---------------------- */
+@media screen and (min-device-width: 801px) and (max-device-width: 1200px) {
+    /* ------------------------------------- HEADER ----------------------------------- */
+    /* Header geral */
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 143, 78);
+        position: sticky;
+        top: 0;
+        padding: 0 20px;
+    }
+
+    /* Posicionando o logo do header */
+    .header-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 15%;
+    }
+
+    .header-img-width {
+        width: 90%;
+    }
+
+    /* Posicionando o menu */
+    .header-links {
+        font-size: 17px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 190px;
+        width: 85%;
+    }
+
+    /* Estilizando cada link do menu */
+    .header-links-item {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        padding: 0 15px;
+    }
+
+    /* Efeito hover dos links do menu */
+    .header-links-item:hover {
+        background-color: #f5f5f53b;
+        margin: 0 2px;
+        padding: 14px 16px;
+        border-radius: 40px;
+    }
+}
+
+
+/* ------------------- STYLE DO HEADER PARA TELAS ENTRE 481PX E 800PX ---------------------- */
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+    /* ------------------------------------- HEADER ----------------------------------- */
+    /* Header geral */
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 143, 78);
+        position: sticky;
+        top: 0;
+        padding: 5px 15px;
+    }
+
+    /* Posicionando o logo do header */
+    .header-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 15%;
+    }
+
+    .header-img-width {
+        width: 85%;
+    }
+
+    /* Posicionando o menu */
+    .header-links {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 85%;
+    }
+
+    /* Estilizando cada link do menu */
+    .header-links-item {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        padding: 0 10px;
+    }
+
+    /* Efeito hover dos links do menu */
+    .header-links-item:hover {
+        background-color: #f5f5f53b;
+        margin: 0 2px;
+        padding: 11px 13px;
+        border-radius: 40px;
+    }
+}
+
+
+/* ------------------- STYLE DO HEADER PARA TELAS ENTRE 320PX E 480PX ---------------------- */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* ------------------------------------- HEADER ----------------------------------- */
+    /* Header geral */
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 143, 78);
+        position: sticky;
+        top: 0;
+        padding: 5px 15px;
+    }
+
+    /* Posicionando o logo do header */
+    .header-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 15%;
+    }
+
+    .header-img-width {
+        width: 100%;
+    }
+
+    /* Posicionando o menu */
+    .header-links {
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 85%;
+    }
+
+    /* Estilizando cada link do menu */
+    .header-links-item {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        padding: 0 4px;
+    }
+
+    /* Efeito hover dos links do menu */
+    .header-links-item:hover {
+        background-color: #f5f5f53b;
+        margin: 0 2px;
+        padding: 11px 13px;
+        border-radius: 40px;
+    }
+}
+
+
+/* ------------------------------------------- FOOTER ------------------------------------------------- */
+
+/* ------------------ STYLE DO FOOTER PARA TELAS DE NO MÍNIMO 1201PX ------------------ */
+@media screen and (min-device-width: 1201px) {
+    /* Configuração geral do footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(158, 156, 156);
+        gap: 230px;
+        padding: 38px;
+    }
+
+    /* Configuração do texto do footer */
+    .footer-texto {
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        justify-content: center;
+    }
+
+    footer > section > p {
+        color: #F5F5F5;
+        margin-bottom: 11px;
+        font-size: 18px;
+    }
+
+    /* Configuração dos ícones das redes sociais do footer */
+    .footer-redes-sociais {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        column-gap: 6px;
+        cursor: pointer;
+        align-items: center;
+        margin-left: 110px;
+    }
+
+    .footer-redes-sociais > a {
+        height: 45px;
+        width: 45px;
+    }
+
+    .icone-instagram {
+        background-image: url(img/instagram.png);
+    }
+
+    .icone-instagram:hover {
+        background-image: url(img/instagram-hover.png);
+    }
+
+    .icone-facebook {
+        background-image: url(img/facebook.png);
+    }
+
+    .icone-facebook:hover {
+        background-image: url(img/facebook-hover.png);
+    }
+
+    .icone-twitter {
+        background-image: url(img/twitter.png);
+    }
+
+    .icone-twitter:hover {
+        background-image: url(img/twitter-hover.png);
+    }
+
+    .icone-linkedin {
+        background-image: url(img/linkedin.png);
+    }
+
+    .icone-linkedin:hover {
+        background-image: url(img/linkedin-hover.png);
+    }
+}
+
+
+/* ----------------- STYLE DO FOOTER PARA TELAS ENTRE 801PX E 1200PX ---------------------- */
+@media screen and (min-device-width: 801px) and (max-device-width: 1200px) {
+    /* Configuração geral do footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(158, 156, 156);
+        padding: 50px;
+    }
+
+    /* Configuração do texto do footer */
+    .footer-texto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > section > p {
+        color: #F5F5F5;
+        margin-bottom: 11px;
+        font-size: 17px;
+    }
+
+    /* Configuração dos ícones das redes sociais do footer */
+    .footer-redes-sociais {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        column-gap: 6px;
+        cursor: pointer;
+        align-items: center;
+        margin-left: 80px;
+    }
+
+    .footer-redes-sociais > a {
+        height: 45px;
+        width: 45px;
+    }
+
+    .icone-instagram {
+        background-image: url(img/instagram.png);
+    }
+
+    .icone-instagram:hover {
+        background-image: url(img/instagram-hover.png);
+    }
+
+    .icone-facebook {
+        background-image: url(img/facebook.png);
+    }
+
+    .icone-facebook:hover {
+        background-image: url(img/facebook-hover.png);
+    }
+
+    .icone-twitter {
+        background-image: url(img/twitter.png);
+    }
+
+    .icone-twitter:hover {
+        background-image: url(img/twitter-hover.png);
+    }
+
+    .icone-linkedin {
+        background-image: url(img/linkedin.png);
+    }
+
+    .icone-linkedin:hover {
+        background-image: url(img/linkedin-hover.png);
+    }
+}
+
+
+/* ----------------- STYLE DO FOOTER PARA TELAS ENTRE 481PX E 800PX ---------------------- */
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+    /* Configuração geral do footer */
+    footer {
+        background-color: rgb(158, 156, 156);
+        padding: 40px 0px;
+    }
+
+    /* Configuração dos ícones das redes sociais do footer */
+    .footer-redes-sociais {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        cursor: pointer;
+        align-items: center;
+        justify-items: center;
+        margin: 20px 140px 0px 140px;
+    }
+
+    .footer-redes-sociais > a {
+        height: 45px;
+        width: 45px;
+    }
+
+    /* Configurando o texto do footer */
+    footer > section > p {
+        color: #F5F5F5;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0 15px;
+    }
+
+    .icone-instagram {
+        background-image: url(img/instagram.png);
+    }
+
+    .icone-instagram:hover {
+        background-image: url(img/instagram-hover.png);
+    }
+
+    .icone-facebook {
+        background-image: url(img/facebook.png);
+    }
+
+    .icone-facebook:hover {
+        background-image: url(img/facebook-hover.png);
+    }
+
+    .icone-twitter {
+        background-image: url(img/twitter.png);
+    }
+
+    .icone-twitter:hover {
+        background-image: url(img/twitter-hover.png);
+    }
+
+    .icone-linkedin {
+        background-image: url(img/linkedin.png);
+    }
+
+    .icone-linkedin:hover {
+        background-image: url(img/linkedin-hover.png);
+    }
+}
+
+
+
+/* ----------------- STYLE DO FOOTER PARA TELAS ENTRE 320PX E 480PX ---------------------- */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    /* Configuração geral do footer */
+    footer {
+        background-color: rgb(158, 156, 156);
+        padding: 40px 0px;
+    }
+
+    /* Configuração dos ícones das redes sociais do footer */
+    .footer-redes-sociais {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        cursor: pointer;
+        align-items: center;
+        margin: 20px 90px 0px 90px;
+    }
+
+    .footer-redes-sociais > a {
+        height: 45px;
+        width: 45px;
+    }
+
+    /* Configurando o texto do footer */
+    footer > section > p {
+        color: #F5F5F5;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .icone-instagram {
+        background-image: url(img/instagram.png);
+    }
+
+    .icone-instagram:hover {
+        background-image: url(img/instagram-hover.png);
+    }
+
+    .icone-facebook {
+        background-image: url(img/facebook.png);
+    }
+
+    .icone-facebook:hover {
+        background-image: url(img/facebook-hover.png);
+    }
+
+    .icone-twitter {
+        background-image: url(img/twitter.png);
+    }
+
+    .icone-twitter:hover {
+        background-image: url(img/twitter-hover.png);
+    }
+
+    .icone-linkedin {
+        background-image: url(img/linkedin.png);
+    }
+
+    .icone-linkedin:hover {
+        background-image: url(img/linkedin-hover.png);
+    }
+}
