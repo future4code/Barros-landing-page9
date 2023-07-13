@@ -1,14 +1,15 @@
 # Bank-landing-page
 
+Esse projeto foi desenvolvido por Francine Hahn, Layla Hissa e Gabriel Suela para a empresa F4BANK.
 
 A landing page contém as seguintes sessões:
-* Home
-* Sobre nós
-* Produtos e serviços
-* Nosso time
-* Contato
-* Perguntas frequentes
-* Abrir conta
+* home
+* sobre nós
+* produtos e serviços
+* nosso time
+* contato
+* perguntas frequentes
+* abrir conta
 
 As tecnologias utilizadas foram:
 * HTML5
